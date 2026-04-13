@@ -41,3 +41,18 @@ Early-stage research and conceptual prototyping.
 
 ## Note
 This project is intended for academic exploration and interdisciplinary collaboration across physics, finance, and computational modeling.
+## Pressure Model
+
+### Conceptual Definition
+
+P = OFI × L × B
+
+Where:
+- OFI: Order Flow Imbalance  
+- L: Liquidity Sensitivity  
+- B: Behavioral Amplification  
+
+### Hypothesis
+
+Market dynamics may behave as flow-like systems where pressure propagates through liquidity structures rather than price alone.
+This formulation is intentionally simplified to establish a conceptual bridge between discrete market microstructure signals and continuous pressure field representations.
