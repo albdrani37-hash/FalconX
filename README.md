@@ -53,6 +53,6 @@ Where:
 - B: Behavioral Amplification  
 
 ### Hypothesis
-
+Further work is required to formalize this model and evaluate its empirical validity.
 Market dynamics may behave as flow-like systems where pressure propagates through liquidity structures rather than price alone.
 This formulation is intentionally simplified to establish a conceptual bridge between discrete market microstructure signals and continuous pressure field representations.
