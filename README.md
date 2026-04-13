@@ -42,7 +42,14 @@ Early-stage research and conceptual prototyping.
 ## Note
 This project is intended for academic exploration and interdisciplinary collaboration across physics, finance, and computational modeling.
 ## Pressure Model
+## Research Questions
 
+This project explores several key questions:
+
+- Can market pressure be formally defined as a measurable field derived from order flow and liquidity structure?  
+- To what extent do liquidity constraints amplify pressure propagation in digital markets?  
+- Can behavioral responses under volatility be modeled as amplification factors within a pressure system?  
+- Is it possible to bridge discrete market microstructure signals with continuous flow-based representations?  
 ### Conceptual Definition
 
 P = OFI × L × B
