@@ -1,93 +1,83 @@
 # FalconX
 
-AI-Assisted Quantitative Trading System  
-Built for institutional-grade performance and real market execution.
+FalconX is a live quantitative trading system operating under real market conditions.
+
+Focused on execution intelligence, risk control, and structured decision-making.
+
+This is not a research concept or theoretical model.
+It is an evolving system built and tested beyond backtests.
 
 ---
 
 ## Overview
 
-FalconX is an open research and engineering initiative focused on the intersection of:
+FalconX is an open research and engineering initiative focused on building a real-world quantitative trading system.
 
-- Artificial Intelligence  
-- Quantitative Trading Systems  
-- Quantum-Inspired Research  
-- Secure Data and Computational Architectures  
-
----
-
-## Vision
-
-Our goal is to build a serious research-driven framework that explores how advanced intelligence systems can contribute to the future of trading, decision systems, and high-performance financial technology.
-
-FalconX is not presented as a hype project.  
-It is being shaped as a disciplined long-term initiative with a strong focus on research quality, architecture, and real-world applicability.
-
----
-
-## Core Directions
-
-- AI-assisted market intelligence  
-- Quantitative trading research  
-- Strategy simulation and backtesting  
-- System architecture for scalable trading infrastructure  
-- Exploration of quantum-inspired approaches  
-- Structured research collaboration  
+It operates at the intersection of:
+- Quantitative Trading Systems
+- Execution Intelligence
+- Risk Architecture
+- Market Microstructure
 
 ---
 
 ## System Direction
 
-FalconX is evolving from a research-driven initiative into a full AI-assisted quantitative trading system.
+FalconX is evolving from a research-driven initiative into a structured live trading system.
 
-The system will focus on:
-
+The system focuses on:
 - Real market execution (OKX integration)
 - Institutional-grade risk management
 - Portfolio-level intelligence
 - Adaptive trading strategies based on market regimes
 
-This transition bridges theoretical research with real-world trading performance.
+This transition bridges theoretical research with real execution environments.
 
 ---
 
 ## Current Status
 
-FalconX is currently in the foundation and architecture stage.
+FalconX is currently in the architecture and execution phase.
 
-This repository will gradually document:
-
-- research direction  
-- project architecture  
-- design principles  
-- technical roadmap  
-- collaboration structure  
+The system is:
+- Running in controlled environments (paper / live testing)
+- Built with modular architecture
+- Integrating execution and risk layers
+- Continuously evolving beyond backtesting
 
 ---
 
 ## Collaboration
 
-We welcome serious interest from:
+We welcome serious contributors who are interested in building real systems, not theoretical models.
 
-- researchers  
-- graduate students  
-- engineers  
-- quantitative developers  
-- academic labs  
-- independent contributors  
+Areas of interest:
+- quantitative developers
+- engineers
+- system architects
+- independent contributors
 
 ---
 
 ## Philosophy
 
-We believe meaningful systems are not built randomly.
+Meaningful systems are not built randomly.
 
-They are built through discipline, clarity, experimentation, and continuous refinement.
+They are built through discipline, clarity, and continuous iteration under real conditions.
+
+---
+
+## Vision
+
+The goal is to build a serious, research-driven, institutional-grade quantitative trading system.
+
+FalconX is not a hype project.
+It is being developed as a long-term system focused on performance, robustness, and real market behavior.
 
 ---
 
 ## Contact
 
-For serious collaboration or research interest, open an Issue or connect via LinkedIn.
+Open to serious collaboration and long-term partnerships.
 
 
