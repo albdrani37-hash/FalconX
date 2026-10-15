@@ -1,31 +1,18 @@
-# FalconX — Quantitative Market Modeling & Analysis System
+# FalconX — Engineering Overview
 
-FalconX is a quantitative trading system designed as a structured framework for analyzing, modeling, and interacting with real market conditions.
+FalconX is an independent quantitative-automation project exploring market-data processing, state handling, execution workflows, risk controls and operational logging in Python.
 
-## Vision
+## Public and private scope
 
-The goal is not to build a conventional trading bot, but to develop a realistic system that integrates quantitative methods with AI-assisted analysis to better understand and respond to market behavior.
+This repository provides high-level documentation. The core implementation, credentials and operational configuration are private. The public material does not demonstrate current live operation or independently validated trading performance.
 
-## Current Focus
+The separate [CRM work sample](examples/crm-review-demo) makes relevant workflow-engineering practices reviewable without exposing the trading system. It is an offline demonstration with synthetic data, not a trading component.
 
-- Event-driven architecture  
-- Risk engine with defined constraints  
-- Execution layer connected to live exchange  
-- Strategy layer (EWMAC as baseline, expanding further)  
-- Continuous logging, validation, and system stability  
+## Engineering interests
 
-## Status
+- Explicit state transitions and validation before changes
+- API-connected workflows and retry handling
+- Operational logs and reproducible tests
+- Documented constraints and reviewable acceptance criteria
 
-FalconX is under active development and currently operating in a live-connected environment, undergoing iterative testing under real market conditions.
-
-## Collaboration
-
-This project is open to thoughtful collaboration with individuals interested in:
-
-- Quantitative research  
-- Algorithmic trading systems  
-- Market microstructure  
-- AI-assisted signal development  
-- Execution and risk architecture  
-
-If this aligns with your interests, feel free to connect.
+See the [selected technical portfolio](PORTFOLIO.md) for source, verification evidence and collaboration scope.

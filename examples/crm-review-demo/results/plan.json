@@ -1,0 +1,369 @@
+{
+  "plan_id": "f5a31760d2fe767e00ca9a3fe3cb8b7d042c9c3d3979c8e8d0d014a154a8523d",
+  "version": "1.0",
+  "source_hash": "65f86698fcd84a620b617d06aa83bd9c30ba6fdc01bc951db13e058325b988b0",
+  "proposals": [
+    {
+      "id": "C001",
+      "before": {
+        "category": "",
+        "company": " Example Business 1 ",
+        "email": "contact01@EXAMPLE.COM ",
+        "id": "C001",
+        "name": " Sample Contact 01 ",
+        "notes": "support needed"
+      },
+      "changes": {
+        "name": "Sample Contact 01",
+        "company": "Example Business 1",
+        "email": "contact01@example.com",
+        "category": "support_request"
+      }
+    },
+    {
+      "id": "C002",
+      "before": {
+        "category": "",
+        "company": " Example Business 1 ",
+        "email": "contact02@EXAMPLE.COM ",
+        "id": "C002",
+        "name": " Sample Contact 02 ",
+        "notes": "Introductory inquiry"
+      },
+      "changes": {
+        "name": "Sample Contact 02",
+        "company": "Example Business 1",
+        "email": "contact02@example.com"
+      }
+    },
+    {
+      "id": "C003",
+      "before": {
+        "category": "",
+        "company": " Example Business 1 ",
+        "email": "contact03@EXAMPLE.COM ",
+        "id": "C003",
+        "name": " Sample Contact 03 ",
+        "notes": "Please send a quote"
+      },
+      "changes": {
+        "name": "Sample Contact 03",
+        "company": "Example Business 1",
+        "email": "contact03@example.com",
+        "category": "quote_request"
+      }
+    },
+    {
+      "id": "C004",
+      "before": {
+        "category": "",
+        "company": " Example Business 1 ",
+        "email": "contact04@EXAMPLE.COM ",
+        "id": "C004",
+        "name": " Sample Contact 04 ",
+        "notes": "support needed"
+      },
+      "changes": {
+        "name": "Sample Contact 04",
+        "company": "Example Business 1",
+        "email": "contact04@example.com",
+        "category": "support_request"
+      }
+    },
+    {
+      "id": "C005",
+      "before": {
+        "category": "",
+        "company": " Example Business 2 ",
+        "email": "contact01@EXAMPLE.COM ",
+        "id": "C005",
+        "name": " Sample Contact 05 ",
+        "notes": "Introductory inquiry"
+      },
+      "changes": {
+        "name": "Sample Contact 05",
+        "company": "Example Business 2",
+        "email": "contact01@example.com"
+      }
+    },
+    {
+      "id": "C006",
+      "before": {
+        "category": "",
+        "company": " Example Business 2 ",
+        "email": "contact06@EXAMPLE.COM ",
+        "id": "C006",
+        "name": " Sample Contact 06 ",
+        "notes": "Please send a quote"
+      },
+      "changes": {
+        "name": "Sample Contact 06",
+        "company": "Example Business 2",
+        "email": "contact06@example.com",
+        "category": "quote_request"
+      }
+    },
+    {
+      "id": "C007",
+      "before": {
+        "category": "",
+        "company": " Example Business 2 ",
+        "email": "contact07@EXAMPLE.COM ",
+        "id": "C007",
+        "name": " Sample Contact 07 ",
+        "notes": "support needed"
+      },
+      "changes": {
+        "name": "Sample Contact 07",
+        "company": "Example Business 2",
+        "email": "contact07@example.com",
+        "category": "support_request"
+      }
+    },
+    {
+      "id": "C008",
+      "before": {
+        "category": "",
+        "company": " Example Business 2 ",
+        "email": "contact08@EXAMPLE.COM ",
+        "id": "C008",
+        "name": " Sample Contact 08 ",
+        "notes": "Introductory inquiry"
+      },
+      "changes": {
+        "name": "Sample Contact 08",
+        "company": "Example Business 2",
+        "email": "contact08@example.com"
+      }
+    },
+    {
+      "id": "C009",
+      "before": {
+        "category": "",
+        "company": " Example Business 3 ",
+        "email": "contact09@EXAMPLE.COM ",
+        "id": "C009",
+        "name": " Sample Contact 09 ",
+        "notes": "Please send a quote"
+      },
+      "changes": {
+        "name": "Sample Contact 09",
+        "company": "Example Business 3",
+        "email": "contact09@example.com",
+        "category": "quote_request"
+      }
+    },
+    {
+      "id": "C010",
+      "before": {
+        "category": "",
+        "company": " Example Business 3 ",
+        "email": "contact02@EXAMPLE.COM ",
+        "id": "C010",
+        "name": " Sample Contact 10 ",
+        "notes": "support needed"
+      },
+      "changes": {
+        "name": "Sample Contact 10",
+        "company": "Example Business 3",
+        "email": "contact02@example.com",
+        "category": "support_request"
+      }
+    },
+    {
+      "id": "C011",
+      "before": {
+        "category": "",
+        "company": " Example Business 3 ",
+        "email": "contact11@EXAMPLE.COM ",
+        "id": "C011",
+        "name": " Sample Contact 11 ",
+        "notes": "Introductory inquiry"
+      },
+      "changes": {
+        "name": "Sample Contact 11",
+        "company": "Example Business 3",
+        "email": "contact11@example.com"
+      }
+    },
+    {
+      "id": "C012",
+      "before": {
+        "category": "",
+        "company": " Example Business 3 ",
+        "email": "contact12@EXAMPLE.COM ",
+        "id": "C012",
+        "name": " Sample Contact 12 ",
+        "notes": "Please send a quote"
+      },
+      "changes": {
+        "name": "Sample Contact 12",
+        "company": "Example Business 3",
+        "email": "contact12@example.com",
+        "category": "quote_request"
+      }
+    },
+    {
+      "id": "C013",
+      "before": {
+        "category": "",
+        "company": " Example Business 4 ",
+        "email": "contact13@EXAMPLE.COM ",
+        "id": "C013",
+        "name": " Sample Contact 13 ",
+        "notes": "support needed"
+      },
+      "changes": {
+        "name": "Sample Contact 13",
+        "company": "Example Business 4",
+        "email": "contact13@example.com",
+        "category": "support_request"
+      }
+    },
+    {
+      "id": "C014",
+      "before": {
+        "category": "",
+        "company": " Example Business 4 ",
+        "email": "contact14@EXAMPLE.COM ",
+        "id": "C014",
+        "name": " Sample Contact 14 ",
+        "notes": "Introductory inquiry"
+      },
+      "changes": {
+        "name": "Sample Contact 14",
+        "company": "Example Business 4",
+        "email": "contact14@example.com"
+      }
+    },
+    {
+      "id": "C015",
+      "before": {
+        "category": "",
+        "company": " Example Business 4 ",
+        "email": "contact03@EXAMPLE.COM ",
+        "id": "C015",
+        "name": " Sample Contact 15 ",
+        "notes": "Please send a quote"
+      },
+      "changes": {
+        "name": "Sample Contact 15",
+        "company": "Example Business 4",
+        "email": "contact03@example.com",
+        "category": "quote_request"
+      }
+    },
+    {
+      "id": "C016",
+      "before": {
+        "category": "",
+        "company": " Example Business 4 ",
+        "email": "contact16@EXAMPLE.COM ",
+        "id": "C016",
+        "name": " Sample Contact 16 ",
+        "notes": "support needed"
+      },
+      "changes": {
+        "name": "Sample Contact 16",
+        "company": "Example Business 4",
+        "email": "contact16@example.com",
+        "category": "support_request"
+      }
+    },
+    {
+      "id": "C017",
+      "before": {
+        "category": "",
+        "company": " Example Business 5 ",
+        "email": "invalid",
+        "id": "C017",
+        "name": " Sample Contact 17 ",
+        "notes": "Introductory inquiry"
+      },
+      "changes": {
+        "name": "Sample Contact 17",
+        "company": "Example Business 5"
+      }
+    },
+    {
+      "id": "C018",
+      "before": {
+        "category": "",
+        "company": " Example Business 5 ",
+        "email": "",
+        "id": "C018",
+        "name": " Sample Contact 18 ",
+        "notes": "Please send a quote"
+      },
+      "changes": {
+        "name": "Sample Contact 18",
+        "company": "Example Business 5",
+        "category": "quote_request"
+      }
+    },
+    {
+      "id": "C019",
+      "before": {
+        "category": "",
+        "company": " Example Business 5 ",
+        "email": "contact19@EXAMPLE.COM ",
+        "id": "C019",
+        "name": "",
+        "notes": "support needed"
+      },
+      "changes": {
+        "company": "Example Business 5",
+        "email": "contact19@example.com",
+        "category": "support_request"
+      }
+    },
+    {
+      "id": "C020",
+      "before": {
+        "category": "",
+        "company": " Example Business 5 ",
+        "email": "contact20@EXAMPLE.COM ",
+        "id": "C020",
+        "name": " Sample Contact 20 ",
+        "notes": "quote and support"
+      },
+      "changes": {
+        "name": "Sample Contact 20",
+        "company": "Example Business 5",
+        "email": "contact20@example.com"
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "C017",
+      "issue": "Missing or invalid email; manual review"
+    },
+    {
+      "id": "C018",
+      "issue": "Missing or invalid email; manual review"
+    },
+    {
+      "id": "C019",
+      "issue": "Missing name; manual review"
+    },
+    {
+      "id": "C020",
+      "issue": "Conflicting category keywords; manual review"
+    }
+  ],
+  "duplicate_candidates": [
+    [
+      "C001",
+      "C005"
+    ],
+    [
+      "C002",
+      "C010"
+    ],
+    [
+      "C003",
+      "C015"
+    ]
+  ]
+}

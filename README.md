@@ -1,83 +1,35 @@
 # FalconX
 
-FalconX is a live quantitative trading system operating under real market conditions.
+Python systems engineering and quantitative-automation project by **Abdullah Alharbi**, an independent researcher and developer based in Saudi Arabia.
 
-Focused on execution intelligence, risk control, and structured decision-making.
+**Reviewing my work for a project? Start with the [selected technical portfolio](PORTFOLIO.md).** It links to runnable source, a tested CRM workflow and AI-agent evaluation research.
 
-This is not a research concept or theoretical model.
-It is an evolving system built and tested beyond backtests.
+## What is public here
 
----
+- [CRM review demonstration](examples/crm-review-demo): a separate, offline Python/SQLite work sample showing approval-scoped updates, replay handling and transactional audit records. It uses synthetic contacts and is not part of the trading engine.
+- [FalconX overview](FALCONX_OVERVIEW.md): high-level context for the quantitative-automation work.
+- `incoming_build/`: historical review templates. Blank checklists are not completed assessments or acceptance evidence.
 
-## Overview
+The core trading implementation and operational configuration are not distributed in this public repository. This page does not establish current live operation, audited investment performance or institutional certification.
 
-FalconX is an open research and engineering initiative focused on building a real-world quantitative trading system.
+## Run the business-workflow sample
 
-It operates at the intersection of:
-- Quantitative Trading Systems
-- Execution Intelligence
-- Risk Architecture
-- Market Microstructure
+Python 3.10 or newer; standard library only. No credentials, paid services or internet access are required.
 
----
+```sh
+git clone https://github.com/albdrani37-hash/FalconX.git
+cd FalconX/examples/crm-review-demo
+python3 -m unittest discover -v
+python3 run_demo.py
+```
 
-## System Direction
+Open `results/demo.html` locally to see the generated walkthrough. See the sample's README for approval semantics and limitations.
 
-FalconX is evolving from a research-driven initiative into a structured live trading system.
+## Project collaboration
 
-The system focuses on:
-- Real market execution (OKX integration)
-- Institutional-grade risk management
-- Portfolio-level intelligence
-- Adaptive trading strategies based on market regimes
+Areas of work include Python automation, API/data integration, workflow validation and reproducible AI-agent evaluation. A first engagement starts with a defined outcome, approved sample data and written acceptance criteria; scope, price and schedule are agreed before delivery.
 
-This transition bridges theoretical research with real execution environments.
+- [LinkedIn](https://www.linkedin.com/in/abdullahalharbi36)
+- [AI-agent trace-audit research](https://github.com/albdrani37-hash/agentdojo-trace-audit)
 
----
-
-## Current Status
-
-FalconX is currently in the architecture and execution phase.
-
-The system is:
-- Running in controlled environments (paper / live testing)
-- Built with modular architecture
-- Integrating execution and risk layers
-- Continuously evolving beyond backtesting
-
----
-
-## Collaboration
-
-We welcome serious contributors who are interested in building real systems, not theoretical models.
-
-Areas of interest:
-- quantitative developers
-- engineers
-- system architects
-- independent contributors
-
----
-
-## Philosophy
-
-Meaningful systems are not built randomly.
-
-They are built through discipline, clarity, and continuous iteration under real conditions.
-
----
-
-## Vision
-
-The goal is to build a serious, research-driven, institutional-grade quantitative trading system.
-
-FalconX is not a hype project.
-It is being developed as a long-term system focused on performance, robustness, and real market behavior.
-
----
-
-## Contact
-
-Open to serious collaboration and long-term partnerships.
-
-
+The examples are presented with their actual implementation boundaries. Portfolio demonstrations are not represented as client deployments.

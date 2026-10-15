@@ -1,0 +1,10 @@
+{
+  "initial_apply": {
+    "applied": 2,
+    "already_applied": 0
+  },
+  "replay": {
+    "applied": 0,
+    "already_applied": 2
+  }
+}

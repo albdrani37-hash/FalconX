@@ -1,0 +1,162 @@
+[
+  {
+    "id": "C001",
+    "name": " Sample Contact 01 ",
+    "email": "contact01@EXAMPLE.COM ",
+    "company": " Example Business 1 ",
+    "notes": "support needed",
+    "category": ""
+  },
+  {
+    "id": "C002",
+    "name": " Sample Contact 02 ",
+    "email": "contact02@EXAMPLE.COM ",
+    "company": " Example Business 1 ",
+    "notes": "Introductory inquiry",
+    "category": ""
+  },
+  {
+    "id": "C003",
+    "name": " Sample Contact 03 ",
+    "email": "contact03@EXAMPLE.COM ",
+    "company": " Example Business 1 ",
+    "notes": "Please send a quote",
+    "category": ""
+  },
+  {
+    "id": "C004",
+    "name": " Sample Contact 04 ",
+    "email": "contact04@EXAMPLE.COM ",
+    "company": " Example Business 1 ",
+    "notes": "support needed",
+    "category": ""
+  },
+  {
+    "id": "C005",
+    "name": " Sample Contact 05 ",
+    "email": "contact01@EXAMPLE.COM ",
+    "company": " Example Business 2 ",
+    "notes": "Introductory inquiry",
+    "category": ""
+  },
+  {
+    "id": "C006",
+    "name": " Sample Contact 06 ",
+    "email": "contact06@EXAMPLE.COM ",
+    "company": " Example Business 2 ",
+    "notes": "Please send a quote",
+    "category": ""
+  },
+  {
+    "id": "C007",
+    "name": " Sample Contact 07 ",
+    "email": "contact07@EXAMPLE.COM ",
+    "company": " Example Business 2 ",
+    "notes": "support needed",
+    "category": ""
+  },
+  {
+    "id": "C008",
+    "name": " Sample Contact 08 ",
+    "email": "contact08@EXAMPLE.COM ",
+    "company": " Example Business 2 ",
+    "notes": "Introductory inquiry",
+    "category": ""
+  },
+  {
+    "id": "C009",
+    "name": " Sample Contact 09 ",
+    "email": "contact09@EXAMPLE.COM ",
+    "company": " Example Business 3 ",
+    "notes": "Please send a quote",
+    "category": ""
+  },
+  {
+    "id": "C010",
+    "name": " Sample Contact 10 ",
+    "email": "contact02@EXAMPLE.COM ",
+    "company": " Example Business 3 ",
+    "notes": "support needed",
+    "category": ""
+  },
+  {
+    "id": "C011",
+    "name": " Sample Contact 11 ",
+    "email": "contact11@EXAMPLE.COM ",
+    "company": " Example Business 3 ",
+    "notes": "Introductory inquiry",
+    "category": ""
+  },
+  {
+    "id": "C012",
+    "name": " Sample Contact 12 ",
+    "email": "contact12@EXAMPLE.COM ",
+    "company": " Example Business 3 ",
+    "notes": "Please send a quote",
+    "category": ""
+  },
+  {
+    "id": "C013",
+    "name": " Sample Contact 13 ",
+    "email": "contact13@EXAMPLE.COM ",
+    "company": " Example Business 4 ",
+    "notes": "support needed",
+    "category": ""
+  },
+  {
+    "id": "C014",
+    "name": " Sample Contact 14 ",
+    "email": "contact14@EXAMPLE.COM ",
+    "company": " Example Business 4 ",
+    "notes": "Introductory inquiry",
+    "category": ""
+  },
+  {
+    "id": "C015",
+    "name": " Sample Contact 15 ",
+    "email": "contact03@EXAMPLE.COM ",
+    "company": " Example Business 4 ",
+    "notes": "Please send a quote",
+    "category": ""
+  },
+  {
+    "id": "C016",
+    "name": " Sample Contact 16 ",
+    "email": "contact16@EXAMPLE.COM ",
+    "company": " Example Business 4 ",
+    "notes": "support needed",
+    "category": ""
+  },
+  {
+    "id": "C017",
+    "name": " Sample Contact 17 ",
+    "email": "invalid",
+    "company": " Example Business 5 ",
+    "notes": "Introductory inquiry",
+    "category": ""
+  },
+  {
+    "id": "C018",
+    "name": " Sample Contact 18 ",
+    "email": "",
+    "company": " Example Business 5 ",
+    "notes": "Please send a quote",
+    "category": ""
+  },
+  {
+    "id": "C019",
+    "name": "",
+    "email": "contact19@EXAMPLE.COM ",
+    "company": " Example Business 5 ",
+    "notes": "support needed",
+    "category": ""
+  },
+  {
+    "id": "C020",
+    "name": " Sample Contact 20 ",
+    "email": "contact20@EXAMPLE.COM ",
+    "company": " Example Business 5 ",
+    "notes": "quote and support",
+    "category": ""
+  }
+]

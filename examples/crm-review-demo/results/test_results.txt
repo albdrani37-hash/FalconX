@@ -1,0 +1,17 @@
+test_audit_failure_rolls_back_update (test_crm_demo.WorkflowTests.test_audit_failure_rolls_back_update) ... ok
+test_deterministic_plan (test_crm_demo.WorkflowTests.test_deterministic_plan) ... ok
+test_duplicate_input_ids_rejected (test_crm_demo.WorkflowTests.test_duplicate_input_ids_rejected) ... ok
+test_duplicates_only_candidates (test_crm_demo.WorkflowTests.test_duplicates_only_candidates) ... ok
+test_email_local_part_case_preserved (test_crm_demo.WorkflowTests.test_email_local_part_case_preserved) ... ok
+test_invalid_email_and_ambiguous_category_flagged (test_crm_demo.WorkflowTests.test_invalid_email_and_ambiguous_category_flagged) ... ok
+test_no_approval_no_updates (test_crm_demo.WorkflowTests.test_no_approval_no_updates) ... ok
+test_only_approved_ids_change (test_crm_demo.WorkflowTests.test_only_approved_ids_change) ... ok
+test_replay_no_extra_writes (test_crm_demo.WorkflowTests.test_replay_no_extra_writes) ... ok
+test_stale_batch_no_partial_writes (test_crm_demo.WorkflowTests.test_stale_batch_no_partial_writes) ... ok
+test_unknown_id_rejected (test_crm_demo.WorkflowTests.test_unknown_id_rejected) ... ok
+test_wrong_plan_rejected (test_crm_demo.WorkflowTests.test_wrong_plan_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.005s
+
+OK
