@@ -4,6 +4,8 @@ Python systems engineering and quantitative-automation project by **Abdullah Alh
 
 **Reviewing my work for a project? Start with the [selected technical portfolio](PORTFOLIO.md).** It links to runnable source, a tested CRM workflow and AI-agent evaluation research.
 
+**[AI engineering services and project inquiries](SERVICES.md)** · [Email Abdullah](mailto:albdrani36@gmail.com)
+
 ## What is public here
 
 - [CRM review demonstration](examples/crm-review-demo): a separate, offline Python/SQLite work sample showing approval-scoped updates, replay handling and transactional audit records. It uses synthetic contacts and is not part of the trading engine.
