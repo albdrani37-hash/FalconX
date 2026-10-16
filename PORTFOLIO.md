@@ -44,6 +44,8 @@ My practical experience includes API-connected Python automation using Docker on
 
 ## Working together
 
+[Services, scope and project inquiries](SERVICES.md) · [Email Abdullah](mailto:albdrani36@gmail.com)
+
 Send the required outcome, systems involved, an approved or anonymized example, deadline and acceptance criteria. I will assess fit and propose a scoped paid task with a delivery schedule and an agreed fee or hour cap.
 
 [LinkedIn](https://www.linkedin.com/in/abdullahalharbi36) · [GitHub](https://github.com/albdrani37-hash)
