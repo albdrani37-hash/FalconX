@@ -1,0 +1,4 @@
+interface:
+  display_name: "CTVI Agent Audit"
+  short_description: "Check local agent traces and evidence provenance"
+  default_prompt: "Use $ctvi-agent-audit to inspect this supplied agent trace and explain structural findings and limitations."

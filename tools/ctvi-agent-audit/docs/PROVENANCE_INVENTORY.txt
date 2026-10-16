@@ -1,0 +1,16 @@
+CTVI Agent Audit 0.2.0 provenance inventory, 17 October 2026
+
+Runtime code ctvi_audit/: newly authored in this authorized workspace during cycles 001 and 002. Not copied from AgentDojo, CTVI manuscripts, FalconX or competitor repositories.
+Build backend: newly authored stdlib-only PEP 517 implementation; packaging structures checked against the Python Packaging User Guide. No third-party source snippets were imported.
+Tests: newly authored synthetic fixtures, including security-review reproductions. No customer trace or third-party evaluation dataset.
+Examples and bundled data: synthetic records. example.invalid URLs are inert illustrative declarations; no source is fetched.
+Plugin icon: original geometric 256px bitmap constructed programmatically in cycle 001; no stock image or external brand mark.
+Docs/check catalog: newly authored descriptions. Official documentation and competitor pages are cited as references, not bundled source content.
+Dependencies: Python standard library at runtime and build time. pip/venv are installation tools provided by the local Python distribution; their source code is not copied into this project.
+Personal skill: authored for this product and stored in the user's skill workspace. Publishing a personal skill does not publish a public Plugin Directory listing.
+
+This inventory documents implementation provenance, not an independent legal chain-of-title certification. The owner-authorized MIT license now applies to the newly authored utility components. Previous research/data licenses remain separate.
+
+Primary packaging references checked 17 October 2026:
+https://packaging.python.org/en/latest/specifications/binary-distribution-format/
+https://packaging.python.org/en/latest/specifications/pyproject-toml/

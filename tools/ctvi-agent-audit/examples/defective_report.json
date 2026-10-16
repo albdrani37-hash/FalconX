@@ -1,0 +1,141 @@
+{
+  "artifact_verification": {
+    "attempted": 1,
+    "bytes_read": 57,
+    "digest_matches": 0,
+    "requested": true
+  },
+  "assessment_scope": "STRUCTURAL_CHECKS_OF_USER_SUPPLIED_RECORDS_ONLY",
+  "counts": {
+    "artifacts": 1,
+    "events": 5,
+    "findings": 9,
+    "findings_omitted": 0,
+    "findings_returned": 9,
+    "tool_calls": 1,
+    "tool_results": 1
+  },
+  "evidence_status": "UNKNOWNS_PRESENT",
+  "finding_code_counts": {
+    "ARTIFACT_DIGEST_MISMATCH": 1,
+    "DUPLICATE_SEQUENCE": 1,
+    "EVIDENCE_EVENT_MISSING": 1,
+    "EXTERNAL_EVIDENCE_UNVERIFIED": 1,
+    "ORPHAN_TOOL_RESULT": 1,
+    "SEQUENCE_REVERSAL": 1,
+    "TIMESTAMP_REVERSAL": 1,
+    "TOOL_REPORTED_ERROR": 1,
+    "TOOL_RESULT_MISSING": 1
+  },
+  "finding_explanations": {
+    "ARTIFACT_DIGEST_MISMATCH": {
+      "meaning": "Read artifact bytes differ from the declared SHA-256 digest.",
+      "next_action": "Check version, transfer integrity and the manifest; preserve mismatching evidence."
+    },
+    "DUPLICATE_SEQUENCE": {
+      "meaning": "Sequence values repeat in the supplied record order.",
+      "next_action": "Check exporter ordering and retry/streaming conventions."
+    },
+    "EVIDENCE_EVENT_MISSING": {
+      "meaning": "An evidence reference names an absent event.",
+      "next_action": "Restore the missing record from an authorized source or retain the gap."
+    },
+    "EXTERNAL_EVIDENCE_UNVERIFIED": {
+      "meaning": "External evidence was declared but not fetched or verified.",
+      "next_action": "Review it through a separately authorized process; this tool never fetches URLs."
+    },
+    "ORPHAN_TOOL_RESULT": {
+      "meaning": "A result has no corresponding call in this trace.",
+      "next_action": "Find the original call record or label the trace incomplete."
+    },
+    "SEQUENCE_REVERSAL": {
+      "meaning": "The declared sequence decreases in supplied order.",
+      "next_action": "Inspect export ordering; do not silently reorder or remove records."
+    },
+    "TIMESTAMP_REVERSAL": {
+      "meaning": "A timestamp precedes the last supplied timestamp.",
+      "next_action": "Check clocks, concurrency and export ordering before interpreting causality."
+    },
+    "TOOL_REPORTED_ERROR": {
+      "meaning": "The supplied tool result declares an error.",
+      "next_action": "Inspect the original sanitized error record; the error is not independently verified."
+    },
+    "TOOL_RESULT_MISSING": {
+      "meaning": "A call has no corresponding result in this trace.",
+      "next_action": "Check truncation or incomplete execution; do not infer the result."
+    }
+  },
+  "findings": [
+    {
+      "artifact_index": 0,
+      "code": "ARTIFACT_DIGEST_MISMATCH",
+      "severity": "error"
+    },
+    {
+      "code": "TOOL_RESULT_MISSING",
+      "event_index": 1,
+      "severity": "unknown"
+    },
+    {
+      "code": "ORPHAN_TOOL_RESULT",
+      "event_index": 2,
+      "severity": "error"
+    },
+    {
+      "code": "TOOL_REPORTED_ERROR",
+      "event_index": 2,
+      "severity": "warning"
+    },
+    {
+      "code": "DUPLICATE_SEQUENCE",
+      "event_index": 3,
+      "severity": "error"
+    },
+    {
+      "code": "EVIDENCE_EVENT_MISSING",
+      "event_index": 3,
+      "severity": "error"
+    },
+    {
+      "code": "EXTERNAL_EVIDENCE_UNVERIFIED",
+      "event_index": 3,
+      "severity": "unknown"
+    },
+    {
+      "code": "SEQUENCE_REVERSAL",
+      "event_index": 3,
+      "severity": "error"
+    },
+    {
+      "code": "TIMESTAMP_REVERSAL",
+      "event_index": 3,
+      "severity": "warning"
+    }
+  ],
+  "input_schema_version": "1.0",
+  "limitations": [
+    "Only declared records are inspected; omitted or fabricated events cannot be detected reliably.",
+    "Source links and artifact hashes do not establish truth, origin, safety, completeness, or scientific admissibility.",
+    "Reported outcomes and tool statuses are assertions, not independently verified results.",
+    "No CTVI construct validation, calibrated score, certification, causal inference, or peer-review conclusion is produced.",
+    "Timestamps and order reflect supplied logs; concurrent and distributed systems may require contextual interpretation.",
+    "Only normalized schema 1.0 is supported; external provider formats require an explicit reviewed adapter.",
+    "An unchanged fingerprint supports report comparison; this tool does not replay an agent or establish stochastic reliability.",
+    "Reports omit raw text, names, IDs, paths and URLs, but counts, fingerprints and outcomes may still be sensitive."
+  ],
+  "outcome_verification": "NOT_PERFORMED",
+  "product": "CTVI Agent Audit",
+  "product_version": "0.2.0",
+  "readiness": "PROTOTYPE",
+  "report_schema_version": "1.1",
+  "reported_outcome": "success",
+  "scientific_validity": "NOT_ASSESSED",
+  "severity_counts": {
+    "error": 5,
+    "unknown": 2,
+    "warning": 2
+  },
+  "structural_status": "ISSUES_OBSERVED",
+  "synthetic_as_declared": true,
+  "trace_fingerprint_sha256": "6df7bbb40acbe5c55de08307171121123864c16532629a87eaec187c5e620804"
+}

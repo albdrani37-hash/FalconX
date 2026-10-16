@@ -1,0 +1,53 @@
+test_cli_exit_codes_and_determinism (test_audit.FilesystemTests.test_cli_exit_codes_and_determinism) ... ok
+test_directory_symlink_rejected (test_audit.FilesystemTests.test_directory_symlink_rejected) ... ok
+test_escape_url_absolute_and_backslash_rejected (test_audit.FilesystemTests.test_escape_url_absolute_and_backslash_rejected) ... ok
+test_fifo_rejected_without_blocking (test_audit.FilesystemTests.test_fifo_rejected_without_blocking) ... ok
+test_hardlink_rejected (test_audit.FilesystemTests.test_hardlink_rejected) ... ok
+test_input_symlink_rejected (test_audit.FilesystemTests.test_input_symlink_rejected) ... ok
+test_leaf_symlink_rejected (test_audit.FilesystemTests.test_leaf_symlink_rejected) ... ok
+test_missing_file_and_digest_missing (test_audit.FilesystemTests.test_missing_file_and_digest_missing) ... ok
+test_no_read_without_explicit_root (test_audit.FilesystemTests.test_no_read_without_explicit_root) ... ok
+test_optional_hash_matches_and_mismatch (test_audit.FilesystemTests.test_optional_hash_matches_and_mismatch) ... ok
+test_oversized_artifact_rejected (test_audit.FilesystemTests.test_oversized_artifact_rejected) ... ok
+test_root_symlink_rejected (test_audit.FilesystemTests.test_root_symlink_rejected) ... ok
+test_bad_jsonl_record_type_and_header (test_audit.ParsingTests.test_bad_jsonl_record_type_and_header) ... ok
+test_depth_limit (test_audit.ParsingTests.test_depth_limit) ... ok
+test_invalid_json_and_duplicate_key (test_audit.ParsingTests.test_invalid_json_and_duplicate_key) ... ok
+test_jsonl_equivalent (test_audit.ParsingTests.test_jsonl_equivalent) ... ok
+test_size_limit (test_audit.ParsingTests.test_size_limit) ... ok
+test_strict_types_and_fields (test_audit.ParsingTests.test_strict_types_and_fields) ... ok
+test_clean_trace_is_not_validated (test_audit.StructuralTests.test_clean_trace_is_not_validated) ... ok
+test_determinism_and_no_input_mutation (test_audit.StructuralTests.test_determinism_and_no_input_mutation) ... ok
+test_duplicate_and_order_issues (test_audit.StructuralTests.test_duplicate_and_order_issues) ... ok
+test_duplicate_call_and_result (test_audit.StructuralTests.test_duplicate_call_and_result) ... ok
+test_error_status_does_not_change_reported_outcome (test_audit.StructuralTests.test_error_status_does_not_change_reported_outcome) ... ok
+test_finding_cap_preserves_aggregate_counts (test_audit.StructuralTests.test_finding_cap_preserves_aggregate_counts) ... ok
+test_missing_and_orphan_results (test_audit.StructuralTests.test_missing_and_orphan_results) ... ok
+test_missing_timestamps_claim_evidence_and_boundaries (test_audit.StructuralTests.test_missing_timestamps_claim_evidence_and_boundaries) ... ok
+test_provenance_gaps (test_audit.StructuralTests.test_provenance_gaps) ... ok
+test_report_does_not_render_sensitive_values (test_audit.StructuralTests.test_report_does_not_render_sensitive_values) ... ok
+test_result_precedes_call (test_audit.StructuralTests.test_result_precedes_call) ... ok
+test_timezone_comparison (test_audit.StructuralTests.test_timezone_comparison) ... ok
+test_aggregate_artifact_budget (test_v020.BoundaryAndPrivacyTests.test_aggregate_artifact_budget) ... ok
+test_ambiguous_artifact_reference_is_not_verified_link (test_v020.BoundaryAndPrivacyTests.test_ambiguous_artifact_reference_is_not_verified_link) ... ok
+test_duplicate_keys_in_nested_record (test_v020.BoundaryAndPrivacyTests.test_duplicate_keys_in_nested_record) ... ok
+test_explanations_contain_no_input_text (test_v020.BoundaryAndPrivacyTests.test_explanations_contain_no_input_text) ... ok
+test_fail_on_unknown_is_explicit (test_v020.BoundaryAndPrivacyTests.test_fail_on_unknown_is_explicit) ... ok
+test_input_unicode_controls_do_not_render (test_v020.BoundaryAndPrivacyTests.test_input_unicode_controls_do_not_render) ... ok
+test_no_network_or_subprocess_runtime_imports (test_v020.BoundaryAndPrivacyTests.test_no_network_or_subprocess_runtime_imports) ... ok
+test_oversized_text_rejected (test_v020.BoundaryAndPrivacyTests.test_oversized_text_rejected) ... ok
+test_too_many_artifacts_rejected (test_v020.BoundaryAndPrivacyTests.test_too_many_artifacts_rejected) ... ok
+test_too_many_evidence_references_rejected (test_v020.BoundaryAndPrivacyTests.test_too_many_evidence_references_rejected) ... ok
+test_unknowns_have_incomplete_evidence_status (test_v020.BoundaryAndPrivacyTests.test_unknowns_have_incomplete_evidence_status) ... ok
+test_bundled_demo_and_schema (test_v020.PackagingTests.test_bundled_demo_and_schema) ... ok
+test_info_modes_do_not_require_files (test_v020.PackagingTests.test_info_modes_do_not_require_files) ... ok
+test_wheel_record_integrity_and_determinism (test_v020.PackagingTests.test_wheel_record_integrity_and_determinism) ... ok
+test_artifact_self_and_future_source_order (test_v020.ReviewRegressions.test_artifact_self_and_future_source_order) ... ok
+test_invalid_cli_arguments_do_not_echo (test_v020.ReviewRegressions.test_invalid_cli_arguments_do_not_echo) ... ok
+test_invalid_timezone_offsets_rejected (test_v020.ReviewRegressions.test_invalid_timezone_offsets_rejected) ... ok
+test_jsonl_unicode_separator_is_data (test_v020.ReviewRegressions.test_jsonl_unicode_separator_is_data) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.787s
+
+OK

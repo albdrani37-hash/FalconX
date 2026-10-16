@@ -1,0 +1,18 @@
+CTVI Agent Audit utility — license scope
+Version 0.2.0, 17 October 2026
+
+The accompanying unmodified MIT License applies to the newly authored CTVI
+Agent Audit utility code, build backend, check catalog, tests, synthetic
+fixtures, associated tool documentation, skill instructions and original
+geometric icon distributed as this package.
+
+If this package is placed at FalconX/tools/ctvi-agent-audit/, its MIT license
+applies to this utility subtree only. It does not change the license or grant
+rights in unrelated FalconX code, CTVI research manuscripts or framework
+documents, third-party data, AgentDojo source/data, or other repositories.
+Those materials are not bundled or relicensed here.
+
+The software license grants software reuse rights. It provides no scientific
+certification, approval of research claims, OpenAI endorsement, trademark
+clearance or validation of CTVI constructs. Separate material portal or
+partnership agreements have not been accepted by this package.

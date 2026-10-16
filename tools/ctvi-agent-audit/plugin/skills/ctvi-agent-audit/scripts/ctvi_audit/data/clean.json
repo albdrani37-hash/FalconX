@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "trace_id": "synthetic-clean-001",
+  "synthetic": true,
+  "reported_outcome": "success",
+  "events": [
+    {
+      "event_id": "start",
+      "sequence": 0,
+      "type": "start",
+      "timestamp": "2026-10-16T10:00:00Z"
+    },
+    {
+      "event_id": "call",
+      "sequence": 1,
+      "type": "tool_call",
+      "call_id": "c1",
+      "tool_name": "retrieve_document",
+      "timestamp": "2026-10-16T10:00:01Z"
+    },
+    {
+      "event_id": "result",
+      "sequence": 2,
+      "type": "tool_result",
+      "call_id": "c1",
+      "status": "success",
+      "timestamp": "2026-10-16T10:00:02Z",
+      "text": "Synthetic document retrieved."
+    },
+    {
+      "event_id": "claim",
+      "sequence": 3,
+      "type": "claim",
+      "timestamp": "2026-10-16T10:00:03Z",
+      "evidence": [
+        {
+          "kind": "event",
+          "ref": "result"
+        }
+      ]
+    },
+    {
+      "event_id": "end",
+      "sequence": 4,
+      "type": "end",
+      "timestamp": "2026-10-16T10:00:04Z"
+    }
+  ]
+}

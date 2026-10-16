@@ -1,0 +1,25 @@
+[build-system]
+requires = []
+build-backend = "build_backend"
+backend-path = ["."]
+
+[project]
+name = "ctvi-agent-audit"
+version = "0.2.0"
+description = "Offline structural and provenance checks for normalized agent traces"
+requires-python = ">=3.10"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Abdullah Alharbi", email = "albdrani36@gmail.com" }]
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Operating System :: POSIX",
+]
+
+[project.scripts]
+ctvi-agent-audit = "ctvi_audit.__main__:main"
+
+# MIT applies only to this utility and its newly authored bundled components.
+# See LICENSE_SCOPE.txt; unrelated research and FalconX code are not relicensed.

@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CTVI Agent Audit normalized trace 1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "trace_id",
+    "events"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "trace_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "reported_outcome": {
+      "enum": [
+        "success",
+        "failure",
+        "partial",
+        "unknown"
+      ]
+    },
+    "events": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "event_id",
+          "sequence",
+          "type"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "sequence": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "type": {
+            "enum": [
+              "start",
+              "message",
+              "tool_call",
+              "tool_result",
+              "observation",
+              "claim",
+              "end"
+            ]
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{1,6})?(?:Z|[+-](?:[01][0-9]|2[0-3]):[0-5][0-9])$"
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 65536
+          },
+          "call_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "tool_name": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "status": {
+            "enum": [
+              "success",
+              "error",
+              "unknown"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "kind"
+              ],
+              "properties": {
+                "kind": {
+                  "enum": [
+                    "event",
+                    "artifact",
+                    "external",
+                    "self_report"
+                  ]
+                },
+                "ref": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 2048
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "kind": {
+                        "enum": [
+                          "event",
+                          "artifact"
+                        ]
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "ref"
+                    ],
+                    "properties": {
+                      "ref": {
+                        "type": "string",
+                        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "enum": [
+                    "tool_call",
+                    "tool_result"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "call_id"
+              ]
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "call_id"
+                ]
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "tool_call"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "tool_name"
+              ]
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "tool_name"
+                ]
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "tool_result"
+                }
+              }
+            },
+            "then": {
+              "required": [
+                "status"
+              ]
+            },
+            "else": {
+              "not": {
+                "required": [
+                  "status"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "artifact_id"
+        ],
+        "properties": {
+          "artifact_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "source_event_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,127}$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1024
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    }
+  },
+  "$comment": "Descriptive schema; Python also enforces byte, depth, surrogate-string and filesystem limits. Timestamps must represent valid dates."
+}

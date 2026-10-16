@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ctvi-agent-audit",
+  "version": "0.2.0",
+  "description": "Offline structural and provenance checks for normalized agent traces; explicit unknowns and guarded local artifact hashing.",
+  "author": {
+    "name": "Abdullah Alharbi",
+    "email": "albdrani36@gmail.com",
+    "url": "https://alharbi-ai-research-solutions.dreamy-owl-5608.chatgpt.site"
+  },
+  "keywords": [
+    "agent-traces",
+    "provenance",
+    "reproducibility"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "CTVI Agent Audit",
+        "shortDescription": "Audit supplied agent traces",
+        "longDescription": "Inspect normalized JSON or JSONL agent traces for duplicate records, ordering anomalies, missing tool results and broken provenance references. Optionally compare SHA-256 digests of explicitly authorized local artifacts. Export deterministic reports with raw trace text omitted and explicit unknowns. Includes synthetic demonstrations and fixed check explanations. No scientific validity score, safety certification or OpenAI endorsement. Tested prototype; public release gates remain separate.",
+        "developerName": "Abdullah Alharbi",
+        "category": "Productivity",
+        "capabilities": [
+          "Read local traces",
+          "Compare local artifact hashes"
+        ],
+        "defaultPrompt": [
+          "Audit this normalized agent trace and explain the unknowns."
+        ],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png",
+        "websiteURL": "https://alharbi-ai-research-solutions.dreamy-owl-5608.chatgpt.site",
+        "supportURL": "https://github.com/albdrani37-hash/FalconX/blob/main/tools/ctvi-agent-audit/SUPPORT.md",
+        "privacyPolicyURL": "https://github.com/albdrani37-hash/FalconX/blob/main/tools/ctvi-agent-audit/docs/PRIVACY_POLICY.md",
+        "termsOfServiceURL": "https://github.com/albdrani37-hash/FalconX/blob/main/tools/ctvi-agent-audit/docs/USAGE_TERMS.md"
+      }
+    }
+  },
+  "license": "MIT",
+  "homepage": "https://alharbi-ai-research-solutions.dreamy-owl-5608.chatgpt.site",
+  "repository": "https://github.com/albdrani37-hash/FalconX"
+}
