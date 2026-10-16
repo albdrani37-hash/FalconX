@@ -1,0 +1,13 @@
+{
+  "id": "N1",
+  "label": "Malformed JSON rejection",
+  "synthetic": true,
+  "tool": "audit_normalized_trace",
+  "arguments": {
+    "trace_json": "{\"private_secret\":\"synthetic-marker\","
+  },
+  "expected": {
+    "is_error": true,
+    "error_code": "INVALID_JSON"
+  }
+}

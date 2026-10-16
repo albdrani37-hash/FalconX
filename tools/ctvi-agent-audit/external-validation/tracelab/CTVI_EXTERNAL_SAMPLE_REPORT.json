@@ -1,0 +1,159 @@
+{
+  "artifact_verification": {
+    "attempted": 0,
+    "bytes_read": 0,
+    "digest_matches": 0,
+    "requested": false
+  },
+  "assessment_scope": "STRUCTURAL_CHECKS_OF_USER_SUPPLIED_RECORDS_ONLY",
+  "counts": {
+    "artifacts": 0,
+    "events": 32,
+    "findings": 18,
+    "findings_omitted": 0,
+    "findings_returned": 18,
+    "tool_calls": 16,
+    "tool_results": 16
+  },
+  "evidence_status": "UNKNOWNS_PRESENT",
+  "finding_code_counts": {
+    "END_MARKER_MISSING": 1,
+    "START_MARKER_MISSING": 1,
+    "TOOL_REPORTED_ERROR": 1,
+    "TOOL_RESULT_STATUS_UNKNOWN": 15
+  },
+  "finding_explanations": {
+    "END_MARKER_MISSING": {
+      "meaning": "The supplied trace has no end marker.",
+      "next_action": "Check whether execution or export ended; do not assume completion."
+    },
+    "START_MARKER_MISSING": {
+      "meaning": "The supplied trace has no start marker.",
+      "next_action": "Check whether the export is partial; absence does not prove missing execution."
+    },
+    "TOOL_REPORTED_ERROR": {
+      "meaning": "The supplied tool result declares an error.",
+      "next_action": "Inspect the original sanitized error record; the error is not independently verified."
+    },
+    "TOOL_RESULT_STATUS_UNKNOWN": {
+      "meaning": "The tool result declares an unknown status.",
+      "next_action": "Retain unknown unless source evidence supports a more specific status."
+    }
+  },
+  "findings": [
+    {
+      "code": "END_MARKER_MISSING",
+      "severity": "unknown"
+    },
+    {
+      "code": "START_MARKER_MISSING",
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 1,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 3,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 5,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 9,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 10,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 11,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 15,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 16,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 17,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_REPORTED_ERROR",
+      "event_index": 19,
+      "severity": "warning"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 22,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 23,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 26,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 27,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 29,
+      "severity": "unknown"
+    },
+    {
+      "code": "TOOL_RESULT_STATUS_UNKNOWN",
+      "event_index": 31,
+      "severity": "unknown"
+    }
+  ],
+  "input_schema_version": "1.0",
+  "limitations": [
+    "Only declared records are inspected; omitted or fabricated events cannot be detected reliably.",
+    "Source links and artifact hashes do not establish truth, origin, safety, completeness, or scientific admissibility.",
+    "Reported outcomes and tool statuses are assertions, not independently verified results.",
+    "No CTVI construct validation, calibrated score, certification, causal inference, or peer-review conclusion is produced.",
+    "Timestamps and order reflect supplied logs; concurrent and distributed systems may require contextual interpretation.",
+    "Only normalized schema 1.0 is supported; external provider formats require an explicit reviewed adapter.",
+    "An unchanged fingerprint supports report comparison; this tool does not replay an agent or establish stochastic reliability.",
+    "Reports omit raw text, names, IDs, paths and URLs, but counts, fingerprints and outcomes may still be sensitive."
+  ],
+  "outcome_verification": "NOT_PERFORMED",
+  "product": "CTVI Agent Audit",
+  "product_version": "0.2.0",
+  "readiness": "PROTOTYPE",
+  "report_schema_version": "1.1",
+  "reported_outcome": "unknown",
+  "scientific_validity": "NOT_ASSESSED",
+  "severity_counts": {
+    "error": 0,
+    "unknown": 17,
+    "warning": 1
+  },
+  "structural_status": "ISSUES_OBSERVED",
+  "synthetic_as_declared": false,
+  "trace_fingerprint_sha256": "c772ee9b968702671941a042fa784326c74f98a46e62c1e2c470daf72f9188ea"
+}

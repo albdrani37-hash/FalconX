@@ -42,6 +42,14 @@ The [AgentDojo Trace Audit](https://github.com/albdrani37-hash/agentdojo-trace-a
 
 My practical experience includes API-connected Python automation using Docker on a VPS, with state handling and operational logs. The trading implementation and private operating-system project are not included in this public selection. No access credentials, live trading configuration, customer data or unverified performance claims are shared here.
 
+## 4. CTVI Agent Audit utility and MCP adapter
+
+[Offline utility](tools/ctvi-agent-audit) and [MCP adapter](tools/ctvi-agent-audit-mcp) expose bounded structural checks and explicit evidence gaps. The adapter provides two read-only tools; it does not execute recorded tools, retrieve URLs or access artifact files. Local engineering tests are distinct from a hosted deployment or directory approval.
+
+A [licensed TraceLab fragment](tools/ctvi-agent-audit/external-validation/tracelab) produced 32 normalized events and 18 expected findings, mostly preserved unknowns. Repeated offline output was identical. This is one partial session, not an accuracy benchmark, independent customer trial or scientific validation.
+
+[Defined commercial audit scope](tools/ctvi-agent-audit/COMMERCIAL_AUDIT.md)
+
 ## Working together
 
 [Services, scope and project inquiries](SERVICES.md) · [Email Abdullah](mailto:albdrani36@gmail.com)
@@ -49,3 +57,4 @@ My practical experience includes API-connected Python automation using Docker on
 Send the required outcome, systems involved, an approved or anonymized example, deadline and acceptance criteria. I will assess fit and propose a scoped paid task with a delivery schedule and an agreed fee or hour cap.
 
 [LinkedIn](https://www.linkedin.com/in/abdullahalharbi36) · [GitHub](https://github.com/albdrani37-hash)
+

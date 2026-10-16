@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ctvi-agent-audit-mcp",
+  "version": "0.3.0",
+  "description": "Inspect supported normalized agent trace text for structural failures and provenance gaps; retain evidence limitations. Not scientific validation or certification.",
+  "author": {"name": "Abdullah Alharbi", "email": "albdrani36@gmail.com"},
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "CTVI Agent Audit MCP",
+        "shortDescription": "Inspect declared trace structure and provenance gaps",
+        "longDescription": "A read-only prototype using supplied normalized JSON or JSONL records. No local file access, URL retrieval, outcome verification, validity score or certification.",
+        "developerName": "Abdullah Alharbi",
+        "category": "Productivity",
+        "websiteURL": "REPLACE_WITH_VERIFIED_PUBLIC_PRODUCT_URL",
+        "privacyPolicyURL": "REPLACE_WITH_ACTUAL_HOSTED_SERVICE_PRIVACY_POLICY_URL",
+        "supportURL": "REPLACE_WITH_VERIFIED_PUBLIC_SUPPORT_URL",
+        "termsOfServiceURL": "REPLACE_WITH_VERIFIED_PUBLIC_USAGE_GUIDE_URL"
+      }
+    }
+  }
+}

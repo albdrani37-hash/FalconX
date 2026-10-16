@@ -1,0 +1,45 @@
+{
+  "source": "Newly authored synthetic fixtures; not customer or scientific validation.",
+  "cases": [
+    {
+      "id": "P1",
+      "file": "review_cases/P1.json",
+      "label": "Clean normalized records"
+    },
+    {
+      "id": "P2",
+      "file": "review_cases/P2.json",
+      "label": "Equivalent normalized JSONL"
+    },
+    {
+      "id": "P3",
+      "file": "review_cases/P3.json",
+      "label": "Missing result and broken evidence reference"
+    },
+    {
+      "id": "P4",
+      "file": "review_cases/P4.json",
+      "label": "External evidence retained as unverified"
+    },
+    {
+      "id": "P5",
+      "file": "review_cases/P5.json",
+      "label": "Catalog and supported limits"
+    },
+    {
+      "id": "N1",
+      "file": "review_cases/N1.json",
+      "label": "Malformed JSON rejection"
+    },
+    {
+      "id": "N2",
+      "file": "review_cases/N2.json",
+      "label": "Duplicate key rejection"
+    },
+    {
+      "id": "N3",
+      "file": "review_cases/N3.json",
+      "label": "Boolean sequence is not an integer"
+    }
+  ]
+}

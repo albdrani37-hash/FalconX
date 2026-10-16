@@ -40,6 +40,20 @@ The CLI does not retain files, but Python may create import bytecode caches unle
 
 ## Status and distribution
 
-Status: PROTOTYPE, tested on synthetic fixtures only. Not production ready; no customer validation or scientific calibration. Independent engineering checks do not constitute security certification. The plugin folder contains a candidate package; no directory approval is claimed. No third-party runtime or build dependencies. Support contact: albdrani36@gmail.com. See `docs/KNOWN_ISSUES.md` for tested-platform and interpretation limits. MIT licensed for this newly authored utility and its bundled components. See LICENSE and LICENSE_SCOPE.txt. This does not relicense CTVI manuscripts, third-party data or unrelated FalconX code.
+Status: PROTOTYPE, tested on synthetic fixtures and one documented licensed external trace fragment. Not production ready; no customer validation or scientific calibration. Independent engineering checks do not constitute security certification. The plugin folder contains a candidate package; no directory approval is claimed. No third-party runtime or build dependencies. Support contact: albdrani36@gmail.com. See `docs/KNOWN_ISSUES.md` for tested-platform and interpretation limits. MIT licensed for this newly authored utility and its bundled components. See LICENSE and LICENSE_SCOPE.txt. This does not relicense CTVI manuscripts, third-party data or unrelated FalconX code.
 
 See the [input format](docs/INPUT_FORMAT.md), [installation and synthetic demo](docs/INSTALL_AND_DEMO.md), [known limitations](docs/KNOWN_ISSUES.md), [privacy notice](docs/PRIVACY_POLICY.md), [usage guidance](docs/USAGE_TERMS.md), [security review](docs/SECURITY_REVIEW.md) and [support information](SUPPORT.md).
+
+## Get started from this repository
+
+```sh
+git clone https://github.com/albdrani37-hash/FalconX.git
+cd FalconX/tools/ctvi-agent-audit
+python3 -m venv .venv
+.venv/bin/python -m pip install --no-index --no-deps dist/ctvi_agent_audit-0.2.0-py3-none-any.whl
+.venv/bin/ctvi-agent-audit --demo clean
+.venv/bin/ctvi-agent-audit --demo defective
+```
+
+See the [external licensed fragment](external-validation/tracelab/README.md), [separate local MCP adapter](../ctvi-agent-audit-mcp/README.md), and [scoped technical review service](COMMERCIAL_AUDIT.md). The MCP adapter sends supplied records to its operator when hosted; its privacy model differs from this offline utility. OpenAI skill checks passed for the original uploaded draft, but Skills-only intake is blocked. No directory approval or publication is claimed.
+

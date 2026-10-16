@@ -1,0 +1,17 @@
+{
+  "id": "P3",
+  "label": "Missing result and broken evidence reference",
+  "synthetic": true,
+  "tool": "audit_normalized_trace",
+  "arguments": {
+    "trace_json": "{\"schema_version\": \"1.0\", \"trace_id\": \"synthetic-remote-review\", \"synthetic\": true, \"reported_outcome\": \"success\", \"events\": [{\"event_id\": \"start\", \"sequence\": 0, \"type\": \"start\", \"timestamp\": \"2026-10-17T00:00:00Z\"}, {\"event_id\": \"call\", \"sequence\": 1, \"type\": \"tool_call\", \"call_id\": \"c1\", \"tool_name\": \"fixture_tool\", \"timestamp\": \"2026-10-17T00:00:01Z\"}, {\"event_id\": \"claim\", \"sequence\": 3, \"type\": \"claim\", \"timestamp\": \"2026-10-17T00:00:03Z\", \"evidence\": [{\"kind\": \"event\", \"ref\": \"result\"}]}, {\"event_id\": \"end\", \"sequence\": 4, \"type\": \"end\", \"timestamp\": \"2026-10-17T00:00:04Z\"}]}"
+  },
+  "expected": {
+    "is_error": false,
+    "structural_status": "ISSUES_OBSERVED",
+    "finding_codes": [
+      "TOOL_RESULT_MISSING",
+      "EVIDENCE_EVENT_MISSING"
+    ]
+  }
+}

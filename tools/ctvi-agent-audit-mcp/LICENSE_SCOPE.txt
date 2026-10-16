@@ -1,0 +1,2 @@
+The MIT LICENSE applies to the newly authored CTVI Agent Audit MCP adapter, its documentation, tests and synthetic fixtures, and the embedded CTVI Agent Audit utility engine 0.2.0 already licensed by Abdullah Alharbi.
+This does not relicense CTVI research manuscripts or framework claims, external datasets, third-party dependencies, unrelated FalconX code, customer records or institutional trademarks. Dependencies retain their own license notices and obligations. No claim of scientific validity, certification or OpenAI endorsement is granted by this software license.

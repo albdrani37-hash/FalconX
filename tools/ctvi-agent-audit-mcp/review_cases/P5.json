@@ -1,0 +1,11 @@
+{
+  "id": "P5",
+  "label": "Catalog and supported limits",
+  "synthetic": true,
+  "tool": "list_audit_checks",
+  "arguments": {},
+  "expected": {
+    "is_error": false,
+    "minimum_checks": 30
+  }
+}

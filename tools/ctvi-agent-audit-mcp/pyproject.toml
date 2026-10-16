@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools==83.0.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "ctvi-agent-audit-mcp"
+version = "0.3.0"
+description = "Bounded Streamable HTTP MCP adapter for declared agent-trace auditing"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Abdullah Alharbi", email = "albdrani36@gmail.com"}]
+dependencies = ["mcp==2.3.0", "jsonschema==4.26.0", "uvicorn==0.54.0", "anyio==4.15.1"]
+[project.scripts]
+ctvi-audit-mcp = "ctvi_mcp.server:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+"ctvi_mcp.engine" = ["data/*.json"]

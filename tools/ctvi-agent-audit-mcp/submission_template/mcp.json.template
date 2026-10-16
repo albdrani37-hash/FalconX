@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "ctvi-agent-audit": {
+      "type": "streamable-http",
+      "url": "REPLACE_WITH_VERIFIED_OPERATOR_CONTROLLED_HTTPS_MCP_URL",
+      "extensions": {
+        "com.openai": {
+          "auth": {"type": "REPLACE_AFTER_AUTHENTICATION_REVIEW"}
+        }
+      }
+    }
+  }
+}

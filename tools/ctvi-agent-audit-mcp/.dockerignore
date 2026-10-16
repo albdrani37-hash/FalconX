@@ -1,0 +1,9 @@
+evidence
+independent
+tests
+review_cases
+.venv
+__pycache__
+*.pyc
+dist
+*.egg-info

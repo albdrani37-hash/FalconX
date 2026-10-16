@@ -1,0 +1,14 @@
+{
+  "type": "Captioned replay of actual SDK results; not live UI screen capture",
+  "source": "DEMO_TRANSCRIPT.json",
+  "transcript_sha256": "7891664044fc07356637b2c3078834abd405ad5ff222db6f735699f47857800c",
+  "video_sha256": "fd2f28112196c3650d64a9f5749a096ccf0ad74a4120d0f9a111af261668b700",
+  "case_ids": [
+    "P1",
+    "P2",
+    "P3",
+    "N1"
+  ],
+  "duration_seconds": 42,
+  "limitations": "Synthetic local MCP calls. Not ChatGPT end-to-end demonstration or publication approval."
+}

@@ -1,0 +1,264 @@
+{
+  "events": [
+    {
+      "call_id": "r001.t001",
+      "event_id": "r001.t001.call",
+      "sequence": 0,
+      "timestamp": "2026-04-18T08:23:10.179Z",
+      "tool_name": "Bash",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r001.t001",
+      "event_id": "r001.t001.result",
+      "sequence": 1,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:12.851Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r002.t001",
+      "event_id": "r002.t001.call",
+      "sequence": 2,
+      "timestamp": "2026-04-18T08:23:14.374Z",
+      "tool_name": "Bash",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r002.t001",
+      "event_id": "r002.t001.result",
+      "sequence": 3,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:14.424Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r003.t001",
+      "event_id": "r003.t001.call",
+      "sequence": 4,
+      "timestamp": "2026-04-18T08:23:16.675Z",
+      "tool_name": "Bash",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r003.t001",
+      "event_id": "r003.t001.result",
+      "sequence": 5,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:16.735Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r004.t001",
+      "event_id": "r004.t001.call",
+      "sequence": 6,
+      "timestamp": "2026-04-18T08:23:18.588Z",
+      "tool_name": "Read",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r004.t002",
+      "event_id": "r004.t002.call",
+      "sequence": 7,
+      "timestamp": "2026-04-18T08:23:18.805Z",
+      "tool_name": "Read",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r004.t003",
+      "event_id": "r004.t003.call",
+      "sequence": 8,
+      "timestamp": "2026-04-18T08:23:18.942Z",
+      "tool_name": "Bash",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r004.t001",
+      "event_id": "r004.t001.result",
+      "sequence": 9,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:18.982Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r004.t002",
+      "event_id": "r004.t002.result",
+      "sequence": 10,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:18.984Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r004.t003",
+      "event_id": "r004.t003.result",
+      "sequence": 11,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:19.015Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r005.t001",
+      "event_id": "r005.t001.call",
+      "sequence": 12,
+      "timestamp": "2026-04-18T08:23:21.344Z",
+      "tool_name": "Read",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r005.t002",
+      "event_id": "r005.t002.call",
+      "sequence": 13,
+      "timestamp": "2026-04-18T08:23:21.602Z",
+      "tool_name": "Read",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r005.t003",
+      "event_id": "r005.t003.call",
+      "sequence": 14,
+      "timestamp": "2026-04-18T08:23:22.017Z",
+      "tool_name": "Read",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r005.t002",
+      "event_id": "r005.t002.result",
+      "sequence": 15,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:22.055Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r005.t003",
+      "event_id": "r005.t003.result",
+      "sequence": 16,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:22.056Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r005.t001",
+      "event_id": "r005.t001.result",
+      "sequence": 17,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:22.057Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r006.t001",
+      "event_id": "r006.t001.call",
+      "sequence": 18,
+      "timestamp": "2026-04-18T08:23:24.324Z",
+      "tool_name": "Bash",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r006.t001",
+      "event_id": "r006.t001.result",
+      "sequence": 19,
+      "status": "error",
+      "timestamp": "2026-04-18T08:23:24.394Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r007.t001",
+      "event_id": "r007.t001.call",
+      "sequence": 20,
+      "timestamp": "2026-04-18T08:23:26.319Z",
+      "tool_name": "Read",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r007.t002",
+      "event_id": "r007.t002.call",
+      "sequence": 21,
+      "timestamp": "2026-04-18T08:23:26.515Z",
+      "tool_name": "Read",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r007.t002",
+      "event_id": "r007.t002.result",
+      "sequence": 22,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:26.563Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r007.t001",
+      "event_id": "r007.t001.result",
+      "sequence": 23,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:26.565Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r008.t001",
+      "event_id": "r008.t001.call",
+      "sequence": 24,
+      "timestamp": "2026-04-18T08:23:28.927Z",
+      "tool_name": "Read",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r008.t002",
+      "event_id": "r008.t002.call",
+      "sequence": 25,
+      "timestamp": "2026-04-18T08:23:29.156Z",
+      "tool_name": "Bash",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r008.t001",
+      "event_id": "r008.t001.result",
+      "sequence": 26,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:29.208Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r008.t002",
+      "event_id": "r008.t002.result",
+      "sequence": 27,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:29.261Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r009.t001",
+      "event_id": "r009.t001.call",
+      "sequence": 28,
+      "timestamp": "2026-04-18T08:23:31.424Z",
+      "tool_name": "Bash",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r009.t001",
+      "event_id": "r009.t001.result",
+      "sequence": 29,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:31.504Z",
+      "type": "tool_result"
+    },
+    {
+      "call_id": "r010.t001",
+      "event_id": "r010.t001.call",
+      "sequence": 30,
+      "timestamp": "2026-04-18T08:23:33.245Z",
+      "tool_name": "Read",
+      "type": "tool_call"
+    },
+    {
+      "call_id": "r010.t001",
+      "event_id": "r010.t001.result",
+      "sequence": 31,
+      "status": "unknown",
+      "timestamp": "2026-04-18T08:23:33.275Z",
+      "type": "tool_result"
+    }
+  ],
+  "reported_outcome": "unknown",
+  "schema_version": "1.0",
+  "synthetic": false,
+  "trace_id": "tracelab-v0.0.1-first10-tools"
+}

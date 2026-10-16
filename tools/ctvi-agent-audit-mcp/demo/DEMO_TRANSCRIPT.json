@@ -1,0 +1,62 @@
+{
+  "recording_type": "Actual SDK calls; synthetic input; not ChatGPT UI or directory approval",
+  "endpoint": "http://127.0.0.1:32873/mcp",
+  "cases": [
+    {
+      "case": "P1",
+      "label": "Clean normalized records",
+      "tool": "audit_normalized_trace",
+      "input_format": "json",
+      "synthetic": true,
+      "is_error": false,
+      "structural_status": "NO_ISSUES_OBSERVED_WITHIN_CHECKS",
+      "event_count": 5,
+      "finding_count": 0,
+      "finding_codes": [],
+      "outcome_verification": "NOT_PERFORMED",
+      "scientific_validity": "NOT_ASSESSED"
+    },
+    {
+      "case": "P2",
+      "label": "Equivalent normalized JSONL",
+      "tool": "audit_normalized_trace",
+      "input_format": "jsonl",
+      "synthetic": true,
+      "is_error": false,
+      "structural_status": "NO_ISSUES_OBSERVED_WITHIN_CHECKS",
+      "event_count": 5,
+      "finding_count": 0,
+      "finding_codes": [],
+      "outcome_verification": "NOT_PERFORMED",
+      "scientific_validity": "NOT_ASSESSED"
+    },
+    {
+      "case": "P3",
+      "label": "Missing result and broken evidence reference",
+      "tool": "audit_normalized_trace",
+      "input_format": "json",
+      "synthetic": true,
+      "is_error": false,
+      "structural_status": "ISSUES_OBSERVED",
+      "event_count": 4,
+      "finding_count": 2,
+      "finding_codes": [
+        "EVIDENCE_EVENT_MISSING",
+        "TOOL_RESULT_MISSING"
+      ],
+      "outcome_verification": "NOT_PERFORMED",
+      "scientific_validity": "NOT_ASSESSED"
+    },
+    {
+      "case": "N1",
+      "label": "Malformed JSON rejection",
+      "tool": "audit_normalized_trace",
+      "input_format": "json",
+      "synthetic": true,
+      "is_error": true,
+      "error": [
+        "CTVI_MCP_REJECTED: INVALID_JSON"
+      ]
+    }
+  ]
+}

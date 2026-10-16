@@ -1,0 +1,284 @@
+{
+  "note": "Dependency distributions are not embedded in our wheel. Notices copied verbatim from tested installed distributions for transparency; each dependency retains its own license. Exact versions in requirements.lock.",
+  "packages": [
+    {
+      "name": "annotated-types",
+      "version": "0.8.0",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/annotated-types/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/anyio/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/attrs/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "cffi",
+      "version": "2.1.1",
+      "license_expression": "MIT-0",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/cffi/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/click/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "cryptography",
+      "version": "50.0.2",
+      "license_expression": "Apache-2.0 OR BSD-3-Clause",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/cryptography/licenses/LICENSE",
+        "third_party_licenses/cryptography/licenses/LICENSE.APACHE",
+        "third_party_licenses/cryptography/licenses/LICENSE.BSD"
+      ]
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "license_files": [
+        "third_party_licenses/h11/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "httpcore2",
+      "version": "2.13.1",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/httpcore2/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "httpx2",
+      "version": "2.13.1",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/httpx2/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "idna",
+      "version": "3.20",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/idna/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/jsonschema/licenses/COPYING"
+      ]
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/jsonschema-specifications/licenses/COPYING"
+      ]
+    },
+    {
+      "name": "mcp",
+      "version": "2.3.0",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "license_files": [
+        "third_party_licenses/mcp/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "mcp-types",
+      "version": "2.3.0",
+      "license_expression": null,
+      "license_metadata": "MIT",
+      "license_files": [
+        "third_party_licenses/mcp-types/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.1",
+      "license_expression": "Apache-2.0",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/opentelemetry-api/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pycparser",
+      "version": "3.11",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/pycparser/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pydantic",
+      "version": "2.14.1",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/pydantic/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.50.1",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/pydantic_core/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "PyJWT",
+      "version": "2.15.1",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/PyJWT/licenses/AUTHORS.rst",
+        "third_party_licenses/PyJWT/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "python-multipart",
+      "version": "0.0.32",
+      "license_expression": "Apache-2.0",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/python-multipart/licenses/LICENSE.txt"
+      ]
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/referencing/licenses/COPYING"
+      ]
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/rpds-py/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "setuptools",
+      "version": "83.0.0",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/setuptools/licenses/LICENSE",
+        "third_party_licenses/setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+        "third_party_licenses/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+        "third_party_licenses/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE",
+        "third_party_licenses/setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE",
+        "third_party_licenses/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE",
+        "third_party_licenses/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE",
+        "third_party_licenses/setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE",
+        "third_party_licenses/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE",
+        "third_party_licenses/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.APACHE",
+        "third_party_licenses/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.BSD",
+        "third_party_licenses/setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE",
+        "third_party_licenses/setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE",
+        "third_party_licenses/setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt",
+        "third_party_licenses/setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "sse-starlette",
+      "version": "3.5.0",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/sse-starlette/licenses/AUTHORS",
+        "third_party_licenses/sse-starlette/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "starlette",
+      "version": "1.8.0",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/starlette/licenses/LICENSE.md"
+      ]
+    },
+    {
+      "name": "truststore",
+      "version": "0.10.5",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/truststore/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.4",
+      "license_expression": "MIT",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/typing-inspection/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "license_expression": "PSF-2.0",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/typing_extensions/licenses/LICENSE"
+      ]
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.54.0",
+      "license_expression": "BSD-3-Clause",
+      "license_metadata": null,
+      "license_files": [
+        "third_party_licenses/uvicorn/licenses/LICENSE.md"
+      ]
+    }
+  ]
+}
