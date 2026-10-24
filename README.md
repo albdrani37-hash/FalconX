@@ -2,7 +2,7 @@
 
 Python systems engineering and quantitative-automation project by **Abdullah Alharbi**, an independent researcher and developer based in Saudi Arabia.
 
-**[Python QA & AI Code Evaluation — evidence brief](PYTHON_QA_AI_EVALUATION.md)** · **[USD 190 scoped paid pilot](PAID_PILOT.md)** · [Selected portfolio](PORTFOLIO.md)
+**[Python QA & AI Code Evaluation — evidence brief](PYTHON_QA_AI_EVALUATION.md)** · **[Two scoped paid pilots: USD 75 / 190](PAID_PILOT.md)** · [Selected portfolio](PORTFOLIO.md)
 
 Review the public code, tests and stated limitations before requesting a scoped quotation. The examples are local/research evidence, not paid customer deployments.
 
