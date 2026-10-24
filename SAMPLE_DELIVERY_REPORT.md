@@ -34,6 +34,12 @@ The saved verification record is dated **15 October 2026**, using **Python 3.12.
 
 The test suite checks rollback on audit insertion failure; deterministic proposal construction; rejection of duplicate input identifiers, unknown identifiers and wrong plan IDs; restricted updates to approved IDs; replay without extra writes; stale-source batch rejection; ambiguous category / invalid email flags; duplicate-candidate behavior; and preservation of email local-part case.
 
+## 3A. Later verification — 24 October 2026 (separate from the 15 October baseline)
+
+The suite was extended by six replay-integrity tests, yielding **18 distinct passing tests per runtime** on Python 3.11, 3.12 and 3.13 in [GitHub Actions run 40051950195](https://github.com/albdrani37-hash/FalconX/actions/runs/40051950195). The new guard rejects a replay when the applied record no longer matches the expected final state or when its recorded audit before/after evidence differs from the original plan. A mixed replay cannot write previously unprocessed records if integrity checking fails. See [dated CI evidence and earlier failed development runs](CI_EVIDENCE.md) and [new regression tests](examples/crm-review-demo/test_replay_integrity.py).
+
+This is a later verification, **not** a retrospective claim that all 18 tests passed on 15 October 2026. Neither run represents a third-party review or live CRM certification.
+
 ## 4. Decision and limitations
 
 **Demonstrated:** a bounded, reproducible local review-and-apply pattern that checks multiple data-integrity conditions and records changes.
