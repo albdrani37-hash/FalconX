@@ -1,0 +1,50 @@
+name: CRM Python QA - reproducible checks
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'examples/crm-review-demo/**'
+      - '.github/workflows/crm-qa.yml'
+  pull_request:
+    paths:
+      - 'examples/crm-review-demo/**'
+      - '.github/workflows/crm-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-crm-sample:
+    name: Python ${{ matrix.python-version }} - synthetic QA checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    defaults:
+      run:
+        working-directory: examples/crm-review-demo
+    steps:
+      - name: Check out exact commit
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run regression tests
+        run: python -m unittest discover -v
+      - name: Execute packaged synthetic workflow
+        run: python run_demo.py
+      - name: Verify saved machine-readable results
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          result = json.loads(Path("results/run_result.json").read_text(encoding="utf-8"))
+          assert result["initial_apply"] == {"applied": 2, "already_applied": 0}, result
+          assert result["replay"] == {"applied": 0, "already_applied": 2}, result
+          print("Verified: two simulated-approved writes; zero extra writes on replay")
+          PY
