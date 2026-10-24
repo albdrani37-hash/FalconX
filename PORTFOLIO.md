@@ -52,7 +52,7 @@ A [licensed TraceLab fragment](tools/ctvi-agent-audit/external-validation/tracel
 
 ## Working together
 
-[Services, scope and project inquiries](SERVICES.md) · [Email Abdullah](mailto:albdrani36@gmail.com)
+[Services, scope and project inquiries](SERVICES.md) · [Email Abdullah](mailto:abdullahalharbi@purelymail.com)
 
 Send the required outcome, systems involved, an approved or anonymized example, deadline and acceptance criteria. I will assess fit and propose a scoped paid task with a delivery schedule and an agreed fee or hour cap.
 
