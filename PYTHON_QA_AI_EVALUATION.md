@@ -19,6 +19,10 @@ The offline Python/SQLite sample shows a guarded review-and-apply pipeline with 
 
 To review independently, use the installation and test commands in the sample README. This is an AI-assisted local demonstration, **not a deployed customer CRM**. It has no production authentication, external LLM or live vendor APIs.
 
+### Expanded replay-integrity verification — 24 October 2026
+
+A later, separate [GitHub Actions run](https://github.com/albdrani37-hash/FalconX/actions/runs/40051950195) passed **18/18 tests** under each of Python 3.11, 3.12 and 3.13. Six additional cases check that already-applied records and audit entries still match the plan before a replay is accepted, including rejection of stale or tampered local state. [Full evidence and failed-then-fixed development history](CI_EVIDENCE.md) · [Additional tests](examples/crm-review-demo/test_replay_integrity.py). The 15 October 12-test results above remain an accurate historical snapshot.
+
 ## Agent-evaluation provenance and reproducibility — research software
 
 [AgentDojo Trace Audit](https://github.com/albdrani37-hash/agentdojo-trace-audit) · [Quickstart](https://github.com/albdrani37-hash/agentdojo-trace-audit/blob/main/QUICKSTART.md) · [Limitations](https://github.com/albdrani37-hash/agentdojo-trace-audit/blob/main/LIMITATIONS.md)
