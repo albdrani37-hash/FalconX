@@ -6,6 +6,8 @@ Python systems engineering and quantitative-automation project by **Abdullah Alh
 
 Review the public code, tests and stated limitations before requesting a scoped quotation. The examples are local/research evidence, not paid customer deployments.
 
+**[Verified GitHub Actions CI results: Python 3.11 / 3.12 / 3.13](CI_EVIDENCE.md)** — twelve tests passed per runtime in one reproducible workflow run.
+
 **[AI engineering services and project inquiries](SERVICES.md)** · [Email Abdullah](mailto:abdullahalharbi@purelymail.com)
 
 ## Agent-trace audit tools
