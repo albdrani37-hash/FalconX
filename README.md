@@ -2,7 +2,9 @@
 
 Python systems engineering and quantitative-automation project by **Abdullah Alharbi**, an independent researcher and developer based in Saudi Arabia.
 
-**Reviewing my work for a project? Start with the [selected technical portfolio](PORTFOLIO.md).** It links to runnable source, a tested CRM workflow and AI-agent evaluation research.
+**[Python QA & AI Code Evaluation — evidence brief](PYTHON_QA_AI_EVALUATION.md)** · **[USD 190 scoped paid pilot](PAID_PILOT.md)** · [Selected portfolio](PORTFOLIO.md)
+
+Review the public code, tests and stated limitations before requesting a scoped quotation. The examples are local/research evidence, not paid customer deployments.
 
 **[AI engineering services and project inquiries](SERVICES.md)** · [Email Abdullah](mailto:abdullahalharbi@purelymail.com)
 
