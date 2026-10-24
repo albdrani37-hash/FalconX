@@ -4,7 +4,7 @@ Python systems engineering and quantitative-automation project by **Abdullah Alh
 
 **Reviewing my work for a project? Start with the [selected technical portfolio](PORTFOLIO.md).** It links to runnable source, a tested CRM workflow and AI-agent evaluation research.
 
-**[AI engineering services and project inquiries](SERVICES.md)** · [Email Abdullah](mailto:albdrani36@gmail.com)
+**[AI engineering services and project inquiries](SERVICES.md)** · [Email Abdullah](mailto:abdullahalharbi@purelymail.com)
 
 ## Agent-trace audit tools
 
