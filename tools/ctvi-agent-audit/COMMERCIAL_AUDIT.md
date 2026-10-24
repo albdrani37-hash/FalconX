@@ -34,6 +34,6 @@ This is a technical review of supplied records, not independent certification, l
 
 ## Request a scoped proposal
 
-Email [albdrani36@gmail.com](mailto:albdrani36@gmail.com?subject=Agent%20trace%20audit%20scope) with the workflow, trace format, approximate record volume, deadline and desired deliverables. Send a schema or synthetic example first. We will confirm technical fit before requesting any authorized redacted sample.
+Email [abdullahalharbi@purelymail.com](mailto:abdullahalharbi@purelymail.com?subject=Agent%20trace%20audit%20scope) with the workflow, trace format, approximate record volume, deadline and desired deliverables. Send a schema or synthetic example first. We will confirm technical fit before requesting any authorized redacted sample.
 
 [Tool source and installation](README.md) · [Privacy notice](docs/PRIVACY_POLICY.md) · [Support](SUPPORT.md)
