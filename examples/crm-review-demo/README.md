@@ -36,6 +36,15 @@ Each approved contact accepts all proposed fields for that contact. Empty approv
 - Record writes and before/after audit entries use one transaction. Replays are idempotent for the same plan and record. On replay, the audit before/after evidence and current contact are checked against that plan; a mismatch rejects the replay rather than reporting success.
 - Audit records include before/after data, plan ID, a reviewer label and UTC timestamp.
 
+## Offline audit verification (additional safeguard)
+After approved updates, generate a machine-readable audit-consistency report:
+
+```sh
+python3 crm_demo.py --db my_demo.sqlite audit audit_verification.json
+```
+
+The command checks every saved audit row against its plan's proposed before/after state and compares the latest audited state per contact to its current SQLite record. It writes `ok`, `audited_records`, `audited_contacts` and `issues` to JSON; an inconsistency produces a nonzero exit status. The verification does **not** authenticate reviewers, detect coordinated edits to all local data, validate contacts that have no audit entries, or replace an external append-only audit service. Seven additional regression tests cover matching records, altered/deleted contacts, altered audit entries, missing plans, malformed JSON and the scope of unaudited records.
+
 ## Tests
 The suite checks approval scoping, exact-plan matching, unknown IDs, stale-source batch rejection, rollback when audit insertion fails, replay idempotency, empty approvals, duplicate input IDs, duplicate candidate handling, ambiguous categories, deterministic proposals and preservation of email local-part case. The additional tests in `test_replay_integrity.py` verify detection of a changed or deleted applied contact, altered audit before/after evidence, failure atomicity for a mixed replay, and a valid unchanged replay.
 
