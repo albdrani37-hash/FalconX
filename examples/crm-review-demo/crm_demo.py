@@ -218,6 +218,7 @@ def main():
     p=sub.add_parser('plan'); p.add_argument('output')
     p=sub.add_parser('apply'); p.add_argument('approval')
     p=sub.add_parser('export'); p.add_argument('output')
+    p=sub.add_parser('audit'); p.add_argument('output')
     args=parser.parse_args(); db=connect(args.db)
     try:
         if args.command=='init': seed(db, json.loads(Path(args.input).read_text(encoding='utf-8')))
@@ -226,6 +227,11 @@ def main():
             approval=json.loads(Path(args.approval).read_text(encoding='utf-8'))
             print(json.dumps(apply(db, approval['plan_id'], approval)))
         elif args.command=='export': write_json(args.output, snapshot(db))
+        elif args.command=='audit':
+            result = verify_audit(db)
+            write_json(args.output, result)
+            if not result['ok']:
+                raise SystemExit(1)
     finally: db.close()
 
 if __name__=='__main__': main()
