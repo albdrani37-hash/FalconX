@@ -24,9 +24,9 @@ No confidential records or credentials are needed for an initial inquiry. Use an
 
 ## Contact
 
-[Email Abdullah](mailto:albdrani36@gmail.com) · [LinkedIn](https://www.linkedin.com/in/abdullahalharbi36) · [GitHub](https://github.com/albdrani37-hash)
+[Email Abdullah](mailto:abdullahalharbi@purelymail.com) · [LinkedIn](https://www.linkedin.com/in/abdullahalharbi36) · [GitHub](https://github.com/albdrani37-hash)
 
 Suggested subject: Project inquiry — workflow / trace review / integration.
 
-Last reviewed: 16 October 2026.
+Last reviewed: 24 October 2026.
 
