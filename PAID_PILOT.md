@@ -1,43 +1,52 @@
-# Paid Pilot — Data & Workflow Reliability Check
+# Python Workflow Reliability — Two Fixed-Scope Paid Pilots
 
-**Abdullah Alharbi** | Independent Python developer and researcher | Saudi Arabia | Remote
-**Business inquiries:** [abdullahalharbi@purelymail.com](mailto:abdullahalharbi@purelymail.com?subject=Paid%20pilot%20-%20workflow%20reliability)
+**Independent developer:** Abdullah Alharbi · Saudi Arabia · remote, written-first collaboration
+**Commercial contact:** [abdullahalharbi@purelymail.com](mailto:abdullahalharbi@purelymail.com?subject=Python%20reliability%20pilot)
 
-## What a buyer gets
+## Why this service exists
 
-A narrowly scoped, reproducible quality check for one Python-driven data-processing step or exported CSV-to-CRM workflow. The purpose is to identify observable data-quality, replay or failure-handling issues before a larger integration project.
+When a Python data or CRM workflow runs twice, will it write the same updates twice? What happens if inputs change after approval, an audit step fails, or a malformed record reaches the processor?
 
-### Starter pilot: indicative fixed fee USD 190
+This service focuses on **reproducible failure cases, controlled changes and verification evidence**. It does not claim to replace broad data-cleaning providers or certify a production system.
 
-Scope is capped at **one agreed workflow/data-processing step**, **one documented CSV/JSON schema** and **up to 200 synthetic or de-identified sample records**, with a written acceptance checklist and no more than five agreed checks from the following categories:
+## Option A — One-Defect Reproduction | USD 75 indicative fixed price
 
-1. Input schema and required-field validation.
-2. Exact-match duplicate candidates or replay/idempotency checks where supported.
-3. Invalid-row and error/exception handling.
-4. Output reconciliations and record counts.
-5. Reproducibility of the agreed sample execution.
+**Buyer outcome:** a clear answer about one reported fault in an existing Python data-processing step.
 
-**Deliverables:** concise findings report (observed vs expected), runnable Python checks or an executable test harness where the existing interfaces permit, sample outputs and a handover/readme. Confirmed findings include minimal reproduction steps. If the sample cannot be processed in scope, delivery is a documented feasibility/blocker assessment rather than a fabricated clean bill of health.
+**Boundaries:** one specified Python script/function or small isolated module, one sanitized input/output example, one reported problem, up to **three agreed checks**. Initial scoping and feasibility must confirm that the code can run in an agreed local or sandbox environment without new paid dependencies or production credentials.
 
-**Planning window:** about 2–4 business days after receiving an agreed sanitized sample, access information and written acceptance criteria, subject to availability and scope review. This is an initial nonbinding offer; scope, fee, taxes and payment milestone require separate agreement before work.
+**Deliverables:** expected-versus-observed notes, minimal reproducible steps, up to three executable checks where the interface supports them, and a concise findings/next-fix recommendation. If the failure is not reproducible on the supplied sample, the report says so explicitly rather than inventing a defect. **Code remediation is not included** in this tier.
 
-**Not included:** live CRM/API integration, production deployment, credentials management, n8n hosting, unprovided proprietary adapters, unrestricted data cleaning, penetration testing, security certification, or assurance that all defects will be found.
+**Indicative delivery:** 1–2 business days after written scope, sample and funding agreement, subject to availability.
 
-## Upgrade path: scoped integration milestone
+## Option B — Regression Guard & One Bounded Fix | USD 190 indicative fixed price
 
-A later Python/API sandbox integration may be quoted separately, after reviewing the real system interface, authentication/approval design, tests and data-handling requirements. A quote is not given without that assessment.
+**Buyer outcome:** a small data workflow backed by regression evidence, with one narrowly specified defect corrected where technically feasible.
 
-## Inspect evidence first
+**Boundaries:** one existing Python-driven CSV/JSON transformation or CRM-import preparation step, one documented schema, up to **200 approved synthetic/de-identified records**, up to **five agreed checks**, and at most **one agreed, isolated correction** in the provided code. A correction that requires a new connector, production authentication, extensive refactoring or external API implementation is quoted separately.
 
-- [Selected technical portfolio](PORTFOLIO.md).
-- [CRM review and replay-safe Python/SQLite demo](examples/crm-review-demo/README.md): 12 passing automated tests in its 15 October 2026 verification record, synthetic data only.
-- [Tests and verification](examples/crm-review-demo/VERIFICATION.md).
-- [AI-agent evidence/trace research software](https://github.com/albdrani37-hash/agentdojo-trace-audit), with benchmark-specific scope limitations.
+**Checks may include:** input/schema validation; duplicate/replay/idempotency handling; invalid-row and error paths; output reconciliation; stale-data protection or rollback behavior as supported by the code.
 
-The public CRM sample is an AI-assisted local demonstration, **not** a customer deployment or operationally validated production service. The agent-trace tool is research software, not independent certification.
+**Deliverables:** short technical findings and evidence links, runnable test cases or a test harness where feasible, the bounded code patch if applicable, before/after test outcomes, setup/run notes and one in-scope clarification or correction round. If no defect is reproducible, deliver documented tests and findings, not a fictional fix.
 
-## Buyer qualification — send only these details initially
+**Indicative delivery:** 2–4 business days after written scope, permitted sample and funding agreement, subject to availability.
 
-Describe the business problem, relevant system or sample schema, approximate record volume, one failure or expectation, deadline, spending range and your preferred invoicing/escrow process. Do **not** email passwords, payment card images, personal data or production logs. A secure intake and permitted data scope can be agreed after fit is confirmed.
+## Evidence to inspect before buying
 
-**Next step:** email [abdullahalharbi@purelymail.com](mailto:abdullahalharbi@purelymail.com?subject=Paid%20pilot%20-%20workflow%20reliability) requesting a scoped pilot. No commitment or delivery starts without accepted written terms.
+- [Worked Python/SQLite CRM example](examples/crm-review-demo/README.md)
+- [Dated verification record](examples/crm-review-demo/VERIFICATION.md): **12 passing automated tests** on a **20-contact synthetic dataset**, recorded 15 October 2026.
+- [Independent-reader sample delivery report](SAMPLE_DELIVERY_REPORT.md)
+- [Selected portfolio](PORTFOLIO.md)
+- [Research-grade agent trace audit software](https://github.com/albdrani37-hash/agentdojo-trace-audit) — benchmark-specific; not general certification.
+
+**Honest limitations:** The CRM example is an AI-assisted *local portfolio demonstration*, not a production customer deployment. Its approval is simulated; the audit record is not tamper-proof. These sample checks do not establish real-world defect rates, production reliability or broad AI safety.
+
+## Before either pilot can start
+
+Please provide the business symptom, one permitted redacted/synthetic sample or schema, expected output, existing tests if any, and an acceptance criterion. Initial inquiry **must not** include credentials, payment card photos, personal data or raw production logs.
+
+The parties must agree on: exact input and output, permitted environment and data handling, one fixed scope, turnaround, currency/taxes, written acceptance criteria, ownership/usage of deliverables, and a verified invoicing or escrow/payment method **before work begins**. Prices and turnaround above are **nonbinding planning offers**; they are not unconditional quotes.
+
+**Excluded:** live production access, credential handling, payment testing, n8n or vendor-specific workflow implementation, live API/CRM connectors, scraping, penetration testing, assurance/certification, performance promises, complex security reviews, or unlimited debugging.
+
+**Contact:** [Request a written scope & paid pilot](mailto:abdullahalharbi@purelymail.com?subject=Python%20Workflow%20Reliability%20-%20scope%20inquiry)
