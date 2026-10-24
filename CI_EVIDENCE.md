@@ -1,6 +1,26 @@
 # GitHub Actions CI Evidence — Python CRM QA Demonstration
 
-## Current verified result: replay-integrity fix — 24 October 2026
+## Latest verified result: audit consistency and 25 regression tests — 24 October 2026
+
+**GitHub Actions run:** [40052721026](https://github.com/albdrani37-hash/FalconX/actions/runs/40052721026) · **Result:** `success` · **Tested commit:** [6036c88357fba54da3b1c3a5705dd32a69fe7392](https://github.com/albdrani37-hash/FalconX/commit/6036c88357fba54da3b1c3a5705dd32a69fe7392).
+
+| Runtime | Job ID | Regression suite | Packaged synthetic workflow and assertions |
+| --- | --- | --- | --- |
+| Python 3.11 | [120748705788](https://github.com/albdrani37-hash/FalconX/actions/runs/40052721026/job/120748705788) | 25/25 passed | passed |
+| Python 3.12 | [120748705852](https://github.com/albdrani37-hash/FalconX/actions/runs/40052721026/job/120748705852) | 25/25 passed | passed |
+| Python 3.13 | [120748705665](https://github.com/albdrani37-hash/FalconX/actions/runs/40052721026/job/120748705665) | 25/25 passed | passed |
+
+These are **25 distinct tests repeated under three Python versions (75 successful test executions, not 75 unique cases)**. The job logs report `Ran 25 tests`, `OK` and successful synthetic workflow/JSON assertions on each runtime.
+
+**Added audit verification:** `crm_demo.py --db <path> audit <report.json>` checks stored audit records against their respective plans, checks the latest audited after-state against the current SQLite contact and emits machine-readable results with a nonzero exit code on inconsistencies. Seven new tests exercise legitimate records, changed/deleted rows, altered evidence, missing plans, malformed JSON and unaudited-contact scope. [Tests](examples/crm-review-demo/test_audit_verification.py) · [Usage and limitations](examples/crm-review-demo/README.md).
+
+**Test-first history:** initial run [40052680559](https://github.com/albdrani37-hash/FalconX/actions/runs/40052680559) failed before the new audit verifier was added. Later source and CLI runs [40052695734](https://github.com/albdrani37-hash/FalconX/actions/runs/40052695734) and [40052711595](https://github.com/albdrani37-hash/FalconX/actions/runs/40052711595) succeeded; the final complete run above also succeeded. Failure notification emails about earlier commits do not contradict the result of the tested final commit.
+
+**Boundary:** These results concern an offline synthetic example; neither the stored SQLite audit nor the verification output is tamper-proof, and the run does not establish real customer integration, independent certification or guaranteed production reliability.
+
+---
+
+## Earlier verified result: replay-integrity fix — 24 October 2026
 
 **Latest source-code change tested:** [`8350642a55efe6aae34f3eb7bac53e68ba0b39f5`](https://github.com/albdrani37-hash/FalconX/commit/8350642a55efe6aae34f3eb7bac53e68ba0b39f5)
 
