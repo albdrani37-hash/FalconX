@@ -6,7 +6,7 @@ Python systems engineering and quantitative-automation project by **Abdullah Alh
 
 Review the public code, tests and stated limitations before requesting a scoped quotation. The examples are local/research evidence, not paid customer deployments.
 
-**[Verified GitHub Actions CI results: Python 3.11 / 3.12 / 3.13](CI_EVIDENCE.md)** — twelve tests passed per runtime in one reproducible workflow run.
+**[Verified GitHub Actions CI results: Python 3.11 / 3.12 / 3.13](CI_EVIDENCE.md)** — the current suite passed **18 tests per runtime** on 24 October 2026 (including replay-integrity regression cases). Earlier 12-test results remain preserved as historical evidence.
 
 **[AI engineering services and project inquiries](SERVICES.md)** · [Email Abdullah](mailto:abdullahalharbi@purelymail.com)
 
