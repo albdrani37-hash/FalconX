@@ -12,7 +12,7 @@ python3 -m unittest discover -v
 ```
 On Windows, use `python` if `python3` is unavailable. Open `results/demo.html` in a browser to view the results. Every run starts from a fresh temporary database and rewrites the demo results. Audit timestamps reflect the new run.
 
-The included run uses 20 synthetic records: 20 have proposed field changes, 3 exact-email duplicate groups are identified, and 4 quality flags are raised. Two records receive simulated approval and are updated. Repeating that approval applies zero additional changes. All 12 automated tests passed when packaged.
+The included run uses 20 synthetic records: 20 have proposed field changes, 3 exact-email duplicate groups are identified, and 4 quality flags are raised. Two records receive simulated approval and are updated. Repeating that approval applies zero additional changes. The original 12 automated tests passed when packaged; the expanded **18-test suite** passed on Python 3.11, 3.12 and 3.13 on **24 October 2026**. [Traceable CI evidence](../../CI_EVIDENCE.md).
 
 ## Explicit review workflow
 ```sh
@@ -33,11 +33,11 @@ Each approved contact accepts all proposed fields for that contact. Empty approv
 - Identical normalized email addresses create review candidates, never automatic merges. Shared mailboxes are a known false-positive case; case variants of the email local part are not grouped.
 - Blank category fields get a transparent suggestion when notes contain exactly one of the keywords `quote` or `support`. Multiple matches remain unclassified and flagged. This is a keyword demo, not semantic intent inference.
 - SQLite stores the proposed source records. Their SHA-256 content-derived plan ID binds approvals to an exact stored plan. A changed approved row aborts the entire pending batch.
-- Record writes and before/after audit entries use one transaction. Replays are idempotent for the same plan and record.
+- Record writes and before/after audit entries use one transaction. Replays are idempotent for the same plan and record. On replay, the audit before/after evidence and current contact are checked against that plan; a mismatch rejects the replay rather than reporting success.
 - Audit records include before/after data, plan ID, a reviewer label and UTC timestamp.
 
 ## Tests
-The suite checks approval scoping, exact-plan matching, unknown IDs, stale-source batch rejection, rollback when audit insertion fails, replay idempotency, empty approvals, duplicate input IDs, duplicate candidate handling, ambiguous categories, deterministic proposals and preservation of email local-part case.
+The suite checks approval scoping, exact-plan matching, unknown IDs, stale-source batch rejection, rollback when audit insertion fails, replay idempotency, empty approvals, duplicate input IDs, duplicate candidate handling, ambiguous categories, deterministic proposals and preservation of email local-part case. The additional tests in `test_replay_integrity.py` verify detection of a changed or deleted applied contact, altered audit before/after evidence, failure atomicity for a mixed replay, and a valid unchanged replay.
 
 ## Limits
 No live CRM adapter, user authentication, identity-verified approval, encryption, semantic deduplication, external LLM, distributed concurrency system, performance benchmark, or production certification is included. The local reviewer label is not authentication. A local administrator can modify the database; the audit is not tamper-proof. This sample is designed for review and extension before any real data or CRM integration.
