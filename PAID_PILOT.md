@@ -41,6 +41,10 @@ This service focuses on **reproducible failure cases, controlled changes and ver
 
 **Honest limitations:** The CRM example is an AI-assisted *local portfolio demonstration*, not a production customer deployment. Its approval is simulated; the audit record is not tamper-proof. These sample checks do not establish real-world defect rates, production reliability or broad AI safety.
 
+### Later regression evidence
+
+On **24 October 2026**, an expanded set of **18 distinct tests** passed on each of Python 3.11, 3.12 and 3.13 in [GitHub Actions](https://github.com/albdrani37-hash/FalconX/actions/runs/40051950195). The added tests check whether replay can falsely acknowledge an approval after subsequent local data or audit edits; the [implementation](examples/crm-review-demo/crm_demo.py) now rejects such mismatches. [See the exact run and prior unsuccessful development attempts](CI_EVIDENCE.md). This is a synthetic local demonstration and does not change the scope or indicative price of either paid pilot.
+
 ## Before either pilot can start
 
 Please provide the business symptom, one permitted redacted/synthetic sample or schema, expected output, existing tests if any, and an acceptance criterion. Initial inquiry **must not** include credentials, payment card photos, personal data or raw production logs.
