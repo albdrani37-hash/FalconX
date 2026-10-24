@@ -1,6 +1,30 @@
 # GitHub Actions CI Evidence — Python CRM QA Demonstration
 
-**Verified:** 24 October 2026 · **Source:** GitHub Actions run [#1](https://github.com/albdrani37-hash/FalconX/actions/runs/40047365598) · **Conclusion:** `success`
+## Current verified result: replay-integrity fix — 24 October 2026
+
+**Latest source-code change tested:** [`8350642a55efe6aae34f3eb7bac53e68ba0b39f5`](https://github.com/albdrani37-hash/FalconX/commit/8350642a55efe6aae34f3eb7bac53e68ba0b39f5)
+
+**GitHub Actions run:** [`40051950195`](https://github.com/albdrani37-hash/FalconX/actions/runs/40051950195) — all three Python matrix jobs completed with **success**.
+
+| Runtime | GitHub Actions job | Regression result | Synthetic end-to-end and JSON assertions |
+| --- | --- | --- | --- |
+| Python 3.11 | [120746337332](https://github.com/albdrani37-hash/FalconX/actions/runs/40051950195/job/120746337332) | **18/18 passed** | passed |
+| Python 3.12 | [120746337287](https://github.com/albdrani37-hash/FalconX/actions/runs/40051950195/job/120746337287) | **18/18 passed** | passed |
+| Python 3.13 | [120746337067](https://github.com/albdrani37-hash/FalconX/actions/runs/40051950195/job/120746337067) | **18/18 passed** | passed |
+
+The same 18 distinct tests run on each of three Python runtimes; **54 passed test executions, not 54 different cases**. The six additional tests cover an unchanged replay, changed or missing applied records, changed audit before/after values, and a mixed previously-applied/new approval whose validation must fail atomically.
+
+**Observed test-first history:** run [`40051851228`](https://github.com/albdrani37-hash/FalconX/actions/runs/40051851228) failed in five newly added tests because the pre-fix implementation accepted invalid replay evidence. The first patch in run [`40051915024`](https://github.com/albdrani37-hash/FalconX/actions/runs/40051915024) also failed because its implementation accidentally intersected a set with a dictionary. Both were superseded by the successful run `40051950195`. GitHub's failure emails refer to those historical attempts and do **not** establish that the later corrected revision failed.
+
+**Guard behavior:** before acknowledging an already-applied approval, the implementation compares its plan-bound expected before/after records to saved audit evidence and checks that the current row still matches the expected after record. A mismatch raises a replay-integrity error before applying any pending changes in the same transaction. This is a local consistency check: it is **not** cryptographic authentication, an externally trusted audit ledger, or production security certification.
+
+---
+
+## Original 12-test baseline — preserved historical record
+
+
+
+**Baseline verified:** 24 October 2026 · **Source:** GitHub Actions run [#1](https://github.com/albdrani37-hash/FalconX/actions/runs/40047365598) · **Conclusion:** `success`
 
 **Workflow:** [`.github/workflows/crm-qa.yml`](.github/workflows/crm-qa.yml)
 **Verified commit:** [`a4783781e828231bc0b4a8fdbb15c2292824d98d`](https://github.com/albdrani37-hash/FalconX/commit/a4783781e828231bc0b4a8fdbb15c2292824d98d)
