@@ -43,7 +43,7 @@ This service focuses on **reproducible failure cases, controlled changes and ver
 
 ### Later regression evidence
 
-On **24 October 2026**, an expanded set of **18 distinct tests** passed on each of Python 3.11, 3.12 and 3.13 in [GitHub Actions](https://github.com/albdrani37-hash/FalconX/actions/runs/40051950195). The added tests check whether replay can falsely acknowledge an approval after subsequent local data or audit edits; the [implementation](examples/crm-review-demo/crm_demo.py) now rejects such mismatches. [See the exact run and prior unsuccessful development attempts](CI_EVIDENCE.md). This is a synthetic local demonstration and does not change the scope or indicative price of either paid pilot.
+On **24 October 2026**, **25 distinct tests** passed on each of Python 3.11, 3.12 and 3.13 in [the latest verified GitHub Actions run](https://github.com/albdrani37-hash/FalconX/actions/runs/40052721026) (75 successful test executions; not 75 distinct tests). Beyond the original replay/idempotency guards, the model now provides an **offline audit-verification CLI** that compares saved records against their plans and checks the current row against the last audited state, with seven additional regression cases and a machine-readable report. [Read exact verification evidence, earlier failures and limitations](CI_EVIDENCE.md). This local synthetic portfolio demonstration does not change either pilot's indicative price, confer production security assurance or establish client-delivery history.
 
 ## Before either pilot can start
 
