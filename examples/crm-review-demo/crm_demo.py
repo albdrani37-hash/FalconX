@@ -100,8 +100,24 @@ def apply(db, plan_id, approval):
         choices = {p['id']: p for p in plan['proposals']}
         if not set(ids) <= choices.keys():
             raise ValueError('Approval contains IDs outside this plan')
-        done = {r[0] for r in db.execute('SELECT contact_id FROM audit WHERE plan_id=?', (plan_id,))}
-        pending = sorted(set(ids) - done)
+        # A prior audit entry is not enough to certify a replay: the stored
+        # before/after evidence and current contact must still match this plan.
+        done = {
+            row[0]: (row[1], row[2]) for row in db.execute(
+                'SELECT contact_id,before_data,after_data FROM audit WHERE plan_id=?',
+                (plan_id,))
+        }
+        completed = set(ids) & done.keys()
+        for cid in sorted(completed):
+            p = choices[cid]
+            expected_before = canonical(p['before'])
+            expected_after = canonical({**p['before'], **p['changes']})
+            audit_before, audit_after = done[cid]
+            current = db.execute('SELECT data FROM contacts WHERE id=?', (cid,)).fetchone()
+            if (audit_before != expected_before or audit_after != expected_after
+                    or current is None or current[0] != expected_after):
+                raise ValueError('Replay integrity check failed: ' + cid)
+        pending = sorted(set(ids) - completed)
         # Check every pending row before writing; stale data aborts the complete batch.
         for cid in pending:
             current = db.execute('SELECT data FROM contacts WHERE id=?', (cid,)).fetchone()
