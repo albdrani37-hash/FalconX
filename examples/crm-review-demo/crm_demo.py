@@ -134,6 +134,70 @@ def apply(db, plan_id, approval):
     except Exception:
         db.execute('ROLLBACK'); raise
 
+
+def verify_audit(db):
+    """Check local plan/audit consistency; not a tamper-proof security attestation.
+
+    Every audit entry must match its stored plan's exact before/after values.
+    Only the most recent audited update for each contact is compared to the
+    current contact; later approved plans may legitimately supersede earlier ones.
+    Untracked contacts are outside this verification scope.
+    """
+    issues = []
+    records = db.execute(
+        'SELECT seq,plan_id,contact_id,before_data,after_data FROM audit ORDER BY seq'
+    ).fetchall()
+    plans = {}
+    latest = {}
+    for seq, plan_id, cid, before, after in records:
+        latest[cid] = (seq, after)
+        if plan_id not in plans:
+            stored = db.execute('SELECT data FROM plans WHERE id=?', (plan_id,)).fetchone()
+            if stored is None:
+                plans[plan_id] = None
+            else:
+                try:
+                    parsed = json.loads(stored[0])
+                    plans[plan_id] = parsed if digest(parsed) == plan_id else False
+                except (ValueError, TypeError):
+                    plans[plan_id] = False
+        plan = plans[plan_id]
+        if plan is None:
+            issues.append({'seq': seq, 'contact_id': cid, 'code': 'MISSING_PLAN'})
+            continue
+        if plan is False:
+            issues.append({'seq': seq, 'contact_id': cid, 'code': 'INVALID_PLAN'})
+            continue
+        try:
+            before_value = json.loads(before)
+            after_value = json.loads(after)
+        except (ValueError, TypeError):
+            issues.append({'seq': seq, 'contact_id': cid, 'code': 'INVALID_AUDIT_JSON'})
+            continue
+        matches = [p for p in plan.get('proposals', []) if p.get('id') == cid]
+        if len(matches) != 1:
+            issues.append({'seq': seq, 'contact_id': cid, 'code': 'AUDIT_PLAN_MISMATCH'})
+            continue
+        p = matches[0]
+        expected_after = {**p['before'], **p['changes']}
+        if before_value != p['before'] or after_value != expected_after:
+            issues.append({'seq': seq, 'contact_id': cid, 'code': 'AUDIT_PLAN_MISMATCH'})
+    for cid, (seq, after) in latest.items():
+        current = db.execute('SELECT data FROM contacts WHERE id=?', (cid,)).fetchone()
+        try:
+            expected = json.loads(after)
+            actual = json.loads(current[0]) if current else None
+        except (ValueError, TypeError):
+            expected, actual = object(), None
+        if current is None or actual != expected:
+            issues.append({'seq': seq, 'contact_id': cid, 'code': 'CURRENT_ROW_MISMATCH'})
+    return {
+        'ok': not issues,
+        'audited_records': len(records),
+        'audited_contacts': len(latest),
+        'issues': issues,
+    }
+
 def write_json(path, value):
     Path(path).write_text(json.dumps(value, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
 
