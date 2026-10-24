@@ -107,7 +107,7 @@ def apply(db, plan_id, approval):
                 'SELECT contact_id,before_data,after_data FROM audit WHERE plan_id=?',
                 (plan_id,))
         }
-        completed = set(ids) & done.keys()
+        completed = set(ids) & set(done)
         for cid in sorted(completed):
             p = choices[cid]
             expected_before = canonical(p['before'])
@@ -130,7 +130,7 @@ def apply(db, plan_id, approval):
             db.execute('INSERT INTO audit(plan_id,contact_id,before_data,after_data,reviewer,applied_at) VALUES (?,?,?,?,?,?)',
                 (plan_id, cid, canonical(p['before']), canonical(after), approval['reviewer'].strip(), datetime.now(timezone.utc).isoformat()))
         db.execute('COMMIT')
-        return {'applied': len(pending), 'already_applied': len(set(ids) & done)}
+        return {'applied': len(pending), 'already_applied': len(completed)}
     except Exception:
         db.execute('ROLLBACK'); raise
 
