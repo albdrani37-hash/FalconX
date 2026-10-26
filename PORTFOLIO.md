@@ -5,6 +5,8 @@ Independent researcher and developer, Saudi Arabia. Available for remote, scoped
 
 This selection gives reviewers concrete code and evidence to inspect. It distinguishes local demonstrations from research software and private operational work.
 
+**For evaluation and delivery teams:** [Independent AI Engineering — evidence-backed capabilities and paid work packages](INDEPENDENT_AI_ENGINEERING_CAPABILITIES.md).
+
 ## 1. CRM review, approval and replay-safe updates
 
 **Business problem:** review messy contact data and apply only explicitly selected changes, while recording what changed and avoiding duplicate writes on retry.
