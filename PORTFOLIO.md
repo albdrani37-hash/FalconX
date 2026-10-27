@@ -7,6 +7,12 @@ This selection gives reviewers concrete code and evidence to inspect. It disting
 
 **For evaluation and delivery teams:** [Independent AI Engineering — evidence-backed capabilities and paid work packages](INDEPENDENT_AI_ENGINEERING_CAPABILITIES.md).
 
+## Runnable synthetic evaluation-evidence demonstration (new, 27 October 2026)
+
+[**Run the bounded Python evidence checker and its 12 tests**](examples/eval-evidence-demo/README.md) · [Source](examples/eval-evidence-demo/verify_evidence.py) · [Tests](examples/eval-evidence-demo/test_verify_evidence.py) · [CI](../../actions/workflows/eval-evidence-demo.yml).
+
+This independent, standard-library-only demo reconciles explicitly included/excluded synthetic agent runs with reported counts, validates supplied artifact payload digests, retains missing evidence as `HOLD`, and reports contradictory records as `FAIL`. All 12 local tests passed on Python 3.13 in the recorded 27 October 2026 run. These claims concern a fabricated local sample; they do not establish input authenticity, enterprise deployment, or AI safety certification.
+
 ## 1. CRM review, approval and replay-safe updates
 
 **Business problem:** review messy contact data and apply only explicitly selected changes, while recording what changed and avoiding duplicate writes on retry.
