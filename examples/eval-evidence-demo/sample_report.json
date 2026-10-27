@@ -1,0 +1,30 @@
+{
+  "calculated": {
+    "failures": 1,
+    "success_rate": 0.5,
+    "successes": 1,
+    "total_included": 2
+  },
+  "issues": [],
+  "run_evidence": [
+    {
+      "evidence": "VERIFIED",
+      "run_id": "r1",
+      "status": "success"
+    },
+    {
+      "evidence": "VERIFIED",
+      "run_id": "r2",
+      "status": "failure"
+    },
+    {
+      "evidence": "NOT_CHECKED",
+      "run_id": "r3",
+      "status": "EXCLUDED"
+    }
+  ],
+  "schema_version": "demo-1",
+  "scope_note": "Input snapshot consistency only; no authenticity, safety, or scientific validity claim.",
+  "source_sha256": "4e93198130f75aaf0478a35d3452c8cf9dd65b2d3b8755f7903641ba5255c904",
+  "status": "PASS"
+}
