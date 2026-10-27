@@ -1,0 +1,39 @@
+{
+  "artifacts": {
+    "a": {
+      "step": 1,
+      "text": "tool returned verified result"
+    },
+    "b": {
+      "step": 2,
+      "text": "tool failed with exception"
+    }
+  },
+  "claims": {
+    "failures": 1,
+    "success_rate": 0.5,
+    "successes": 1,
+    "total_included": 2
+  },
+  "runs": [
+    {
+      "artifact_id": "a",
+      "artifact_sha256": "34907cd80ef3eff0b7a1c7cf7f8aba3256a976def3839491f4a0d075c6cd26d9",
+      "included": true,
+      "outcome": "success",
+      "run_id": "r1"
+    },
+    {
+      "artifact_id": "b",
+      "artifact_sha256": "d870dc1a3756e6e7ebdf341ff91cf49805d4c89343c0bdec8e22862fa4ef64f0",
+      "included": true,
+      "outcome": "failure",
+      "run_id": "r2"
+    },
+    {
+      "exclusion_reason": "not in selected population",
+      "included": false,
+      "run_id": "r3"
+    }
+  ]
+}
