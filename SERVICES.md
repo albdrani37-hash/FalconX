@@ -2,6 +2,8 @@
 
 Independent researcher and Python developer, Saudi Arabia. Remote, defined-scope project work.
 
+**Published evaluation service:** [AI Agent Evaluation Evidence & Reproducibility Review on Contra](https://contra.com/s/kck6PBq7-ai-agent-evaluation-evidence-and-reproducibility-review). Contact for pricing; every engagement requires an agreed scope, acceptance criteria and secure payment milestones.
+
 ## Available workstreams
 
 **Enterprise AI Automation Assessment.** Map one operational workflow, examine available data and integration requirements, identify failure and access risks, and prepare a costed pilot scope. The assessment uses the client's baseline; savings are hypotheses until measured.
