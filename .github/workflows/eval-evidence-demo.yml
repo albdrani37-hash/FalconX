@@ -1,0 +1,48 @@
+name: Agent Evaluation Evidence - synthetic buyer example
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'examples/eval-evidence-demo/**'
+      - '.github/workflows/eval-evidence-demo.yml'
+  pull_request:
+    paths:
+      - 'examples/eval-evidence-demo/**'
+      - '.github/workflows/eval-evidence-demo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.12', '3.13']
+    defaults:
+      run:
+        working-directory: examples/eval-evidence-demo
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Twelve synthetic positive and negative tests
+        run: python -m unittest -v test_verify_evidence.py
+      - name: Check executable report and fail-closed status
+        run: |
+          python verify_evidence.py sample_synthetic.json --output result_ci.json
+          python - <<'PY'
+          import json
+          d=json.load(open('result_ci.json', encoding='utf-8'))
+          assert d['status'] == 'PASS', d
+          assert d['calculated']['total_included'] == 2, d
+          assert d['calculated']['successes'] == 1, d
+          assert d['calculated']['failures'] == 1, d
+          assert len(d['issues']) == 0, d
+          print('Verified synthetic input consistency and report invariants')
+          PY
