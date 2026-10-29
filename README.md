@@ -2,7 +2,7 @@
 
 Python systems engineering and quantitative-automation project by **Abdullah Alharbi**, an independent researcher and developer based in Saudi Arabia.
 
-**For funded engineering teams:** [AI-agent evaluation evidence pilot — commercial scope and pricing parameters](https://github.com/albdrani37-hash/agentdojo-trace-audit/blob/main/PAID_AGENT_EVALUATION_PILOT.md) · [Request a scoped paid review](https://github.com/albdrani37-hash/agentdojo-trace-audit/blob/main/REQUEST_A_QUOTE.md) · [Independent AI engineering capability brief](INDEPENDENT_AI_ENGINEERING_CAPABILITIES.md) · [Selected portfolio](PORTFOLIO.md)
+**[International AI engineering services & paid subcontracting](COMMERCIAL_SERVICES.md)** · [Request a scoped commercial discussion](mailto:albdrani36@gmail.com?subject=Paid%20AI%20engineering%20scope)\n\n**For funded engineering teams:** [AI-agent evaluation evidence pilot — commercial scope and pricing parameters](https://github.com/albdrani37-hash/agentdojo-trace-audit/blob/main/PAID_AGENT_EVALUATION_PILOT.md) · [Request a scoped paid review](https://github.com/albdrani37-hash/agentdojo-trace-audit/blob/main/REQUEST_A_QUOTE.md) · [Independent AI engineering capability brief](INDEPENDENT_AI_ENGINEERING_CAPABILITIES.md) · [Selected portfolio](PORTFOLIO.md)
 
 Two bounded service areas supported by inspectable research and synthetic demonstrations:
 
