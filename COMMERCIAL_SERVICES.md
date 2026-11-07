@@ -3,7 +3,7 @@
 **Abdullah Alharbi — independent AI evaluation researcher and Python systems developer**  
 Riyadh, Saudi Arabia · Available for remote, funded, defined-scope contracts and specialist subcontracting.
 
-**Commercial enquiries:** [albdrani36@gmail.com](mailto:albdrani36@gmail.com?subject=Scoped%20AI%20engineering%20project)  
+**Commercial enquiries:** [abdullahalharbi@purelymail.com](mailto:abdullahalharbi@purelymail.com?subject=Scoped%20AI%20engineering%20project)  
 **Source-backed work samples:** [Selected portfolio](PORTFOLIO.md) · [AgentDojo Trace Audit](https://github.com/albdrani37-hash/agentdojo-trace-audit) · [Python CRM validation demo](examples/crm-review-demo/README.md)
 
 ## Services available for discussion
@@ -27,7 +27,7 @@ Related services can extend into MCP-style tool interfaces, technical research, 
 
 ## How to request a paid proposal
 
-Email **albdrani36@gmail.com** with:
+Email **abdullahalharbi@purelymail.com** with:
 - Business objective and the one workflow/problem to solve
 - Available non-confidential sample or sandbox
 - Specific deliverables, acceptance criteria and required timeline
